@@ -50,7 +50,7 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            max-width: 400px;
+            max-width: 450px;
             width: 90%;
         }
         
@@ -114,6 +114,7 @@
             align-items: center;
             justify-content: center;
             background: #f3f4f6;
+            overflow: hidden;
         }
         
         .avatar-option:hover {
@@ -122,6 +123,43 @@
         
         .avatar-option.selected {
             border-color: #4f46e5;
+            background: #e0e7ff;
+        }
+        
+        .avatar-option img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .avatar-upload {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .avatar-upload input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        
+        .avatar-upload-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px dashed #4f46e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #4f46e5;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+        
+        .avatar-upload-btn:hover {
             background: #e0e7ff;
         }
         
@@ -198,6 +236,13 @@
             align-items: center;
             justify-content: center;
             font-size: 20px;
+            overflow: hidden;
+        }
+        
+        .user-info .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .user-info h3 {
@@ -208,6 +253,48 @@
         .user-info span {
             color: #6b7280;
             font-size: 0.9em;
+        }
+        
+        .chat-tabs {
+            display: flex;
+            background: #f3f4f6;
+            border-bottom: 1px solid #d1d5db;
+        }
+        
+        .chat-tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9em;
+            position: relative;
+        }
+        
+        .chat-tab:hover {
+            background: #e5e7eb;
+        }
+        
+        .chat-tab.active {
+            background: white;
+            color: #4f46e5;
+            font-weight: bold;
+        }
+        
+        .chat-tab .notification-badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: #ef4444;
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            font-size: 0.7em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
         }
         
         .online-users {
@@ -233,6 +320,14 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .user-item:hover {
+            background: #f3f4f6;
+            transform: translateY(-1px);
         }
         
         .user-item .user-avatar {
@@ -244,6 +339,13 @@
             align-items: center;
             justify-content: center;
             font-size: 16px;
+            overflow: hidden;
+        }
+        
+        .user-item .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .user-status {
@@ -251,6 +353,22 @@
             height: 8px;
             background: #10b981;
             border-radius: 50%;
+        }
+        
+        .user-item .unread-messages {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: #ef4444;
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            font-size: 0.7em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
         }
         
         /* Chat Container */
@@ -270,6 +388,23 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
+        }
+        
+        .chat-header .back-button {
+            position: absolute;
+            left: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .chat-header .back-button:hover {
+            background: rgba(255,255,255,0.3);
         }
         
         .message-count {
@@ -308,6 +443,13 @@
             justify-content: center;
             font-size: 16px;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+        
+        .message .message-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .message-content {
@@ -336,6 +478,23 @@
             font-size: 0.9em;
             line-height: 1.4;
             margin: 2px 0;
+        }
+        
+        .message-text a {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        
+        .message.sent .message-text a {
+            color: #bfdbfe;
+        }
+        
+        .message-image {
+            max-width: 250px;
+            max-height: 200px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px 0;
         }
         
         .message-status {
@@ -390,6 +549,13 @@
             align-items: center;
             justify-content: center;
             font-size: 12px;
+            overflow: hidden;
+        }
+        
+        .typing-indicator .typing-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         @keyframes pulse {
@@ -403,15 +569,24 @@
             background: white;
             border-top: 1px solid #e5e7eb;
             gap: 10px;
+            align-items: flex-end;
+        }
+        
+        .chat-input-container {
+            flex: 1;
+            position: relative;
         }
         
         #messageInput {
-            flex: 1;
-            padding: 12px 15px;
+            width: 100%;
+            padding: 12px 50px 12px 15px;
             border: 2px solid #e5e7eb;
             border-radius: 25px;
             outline: none;
             font-size: 1em;
+            resize: none;
+            min-height: 45px;
+            max-height: 120px;
         }
         
         #messageInput:focus {
@@ -421,6 +596,40 @@
         #messageInput:disabled {
             background: #f3f4f6;
             cursor: not-allowed;
+        }
+        
+        .input-actions {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .input-action-btn {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: #f3f4f6;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        
+        .input-action-btn:hover {
+            background: #e5e7eb;
+        }
+        
+        .input-action-btn input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
         }
         
         #sendButton {
@@ -433,6 +642,7 @@
             font-size: 1em;
             font-weight: bold;
             transition: background 0.3s;
+            min-width: 60px;
         }
         
         #sendButton:hover {
@@ -460,6 +670,41 @@
         .error {
             background: #fee2e2;
             color: #991b1b;
+        }
+
+        /* Image Modal */
+        .image-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            display: none;
+        }
+        
+        .image-modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        
+        .image-modal .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
         }
 
         /* Notification */
@@ -492,6 +737,39 @@
             opacity: 0.9;
         }
 
+        /* Audio Settings */
+        .audio-settings {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+        }
+        
+        .audio-toggle {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+        
+        .audio-toggle:hover {
+            background: #f3f4f6;
+        }
+        
+        .audio-toggle.muted {
+            opacity: 0.5;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .app-container {
@@ -511,6 +789,10 @@
             
             .message {
                 max-width: 85%;
+            }
+            
+            .chat-header .back-button {
+                display: block;
             }
         }
 
@@ -541,6 +823,10 @@
                         <div class="avatar-option" data-avatar="😍">😍</div>
                         <div class="avatar-option" data-avatar="🤗">🤗</div>
                         <div class="avatar-option" data-avatar="😋">😋</div>
+                        <div class="avatar-upload">
+                            <input type="file" id="avatarUpload" accept="image/*">
+                            <div class="avatar-upload-btn">📷</div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -573,6 +859,17 @@
                 </div>
             </div>
             
+            <div class="chat-tabs">
+                <div class="chat-tab active" data-tab="public">
+                    Phòng chung
+                    <span class="notification-badge" id="publicNotifications">0</span>
+                </div>
+                <div class="chat-tab" data-tab="private">
+                    Tin nhắn riêng
+                    <span class="notification-badge" id="privateNotifications">0</span>
+                </div>
+            </div>
+            
             <div class="online-users">
                 <h4>
                     <span class="user-status"></span>
@@ -585,6 +882,7 @@
         <!-- Chat Container -->
         <div class="chat-container">
             <div class="chat-header">
+                <button class="back-button" id="backButton">←</button>
                 <span>Phòng chat: <span id="roomName">an lư vip</span></span>
                 <span class="message-count">Tin nhắn: <span id="messageCount">0</span></span>
             </div>
@@ -600,10 +898,31 @@
             </div>
             
             <div class="chat-input">
-                <input type="text" id="messageInput" placeholder="Nhập tin nhắn..." maxlength="1000" disabled>
+                <div class="chat-input-container">
+                    <textarea id="messageInput" placeholder="Nhập tin nhắn..." maxlength="1000" disabled rows="1"></textarea>
+                    <div class="input-actions">
+                        <button class="input-action-btn" title="Gửi ảnh">
+                            <input type="file" id="imageUpload" accept="image/*">
+                            📷
+                        </button>
+                        <button class="input-action-btn" id="linkBtn" title="Chèn link">🔗</button>
+                    </div>
+                </div>
                 <button id="sendButton" disabled>Gửi</button>
             </div>
         </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <button class="close-btn">&times;</button>
+        <img id="modalImage" src="" alt="">
+    </div>
+
+    <!-- Audio Settings -->
+    <div id="audioSettings" class="audio-settings hidden">
+        <button class="audio-toggle" id="audioToggle" title="Bật/tắt âm thanh thông báo">🔊</button>
+        <span style="font-size: 0.9em; color: #6b7280;">Âm thanh</span>
     </div>
 
     <!-- Notification -->
@@ -625,13 +944,19 @@
                 this.messageCount = 0;
                 this.isConnected = false;
                 this.typingTimeout = null;
-                this.messageStatus = new Map(); // Track message status
-                this.notificationSound = null;
+                this.messageStatus = new Map();
+                this.currentChatType = 'public'; // 'public' or 'private'
+                this.currentPrivateUser = null;
+                this.privateChats = new Map(); // Store private chat messages
+                this.unreadCounts = { public: 0, private: new Map() };
+                this.audioEnabled = true;
+                this.isPageVisible = true;
                 
                 this.initElements();
                 this.initEventListeners();
                 this.initSocket();
                 this.initNotificationSound();
+                this.setupImageHandling();
             }
             
             initElements() {
@@ -644,6 +969,7 @@
                 this.loginLoading = document.getElementById('loginLoading');
                 this.loginError = document.getElementById('loginError');
                 this.avatarSelection = document.getElementById('avatarSelection');
+                this.avatarUpload = document.getElementById('avatarUpload');
                 
                 // Chat elements
                 this.chatApp = document.getElementById('chatApp');
@@ -661,6 +987,18 @@
                 this.notification = document.getElementById('notification');
                 this.notificationHeader = document.getElementById('notificationHeader');
                 this.notificationContent = document.getElementById('notificationContent');
+                this.imageUpload = document.getElementById('imageUpload');
+                this.linkBtn = document.getElementById('linkBtn');
+                this.imageModal = document.getElementById('imageModal');
+                this.modalImage = document.getElementById('modalImage');
+                this.backButton = document.getElementById('backButton');
+                this.audioSettings = document.getElementById('audioSettings');
+                this.audioToggle = document.getElementById('audioToggle');
+                
+                // Tab elements
+                this.chatTabs = document.querySelectorAll('.chat-tab');
+                this.publicNotifications = document.getElementById('publicNotifications');
+                this.privateNotifications = document.getElementById('privateNotifications');
             }
             
             initEventListeners() {
@@ -675,22 +1013,73 @@
                     if (e.target.classList.contains('avatar-option')) {
                         document.querySelectorAll('.avatar-option').forEach(opt => opt.classList.remove('selected'));
                         e.target.classList.add('selected');
-                        this.avatar = e.target.dataset.avatar;
+                        this.avatar = e.target.dataset.avatar || e.target.querySelector('img')?.src;
                     }
+                });
+                
+                // Avatar upload
+                this.avatarUpload.addEventListener('change', (e) => {
+                    this.handleAvatarUpload(e);
                 });
                 
                 // Message input
                 this.messageInput.addEventListener('keypress', (e) => {
-                    if (e.key === 'Enter') {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();
                         this.sendMessage();
                     } else {
                         this.handleTyping();
                     }
                 });
                 
+                // Auto-resize textarea
+                this.messageInput.addEventListener('input', () => {
+                    this.messageInput.style.height = 'auto';
+                    this.messageInput.style.height = Math.min(this.messageInput.scrollHeight, 120) + 'px';
+                });
+                
                 // Send button
                 this.sendButton.addEventListener('click', () => {
                     this.sendMessage();
+                });
+                
+                // Image upload
+                this.imageUpload.addEventListener('change', (e) => {
+                    this.handleImageUpload(e);
+                });
+                
+                // Link button
+                this.linkBtn.addEventListener('click', () => {
+                    this.insertLink();
+                });
+                
+                // Image modal
+                this.imageModal.addEventListener('click', (e) => {
+                    if (e.target === this.imageModal || e.target.classList.contains('close-btn')) {
+                        this.closeImageModal();
+                    }
+                });
+                
+                // Back button
+                this.backButton.addEventListener('click', () => {
+                    this.switchToPublicChat();
+                });
+                
+                // Chat tabs
+                this.chatTabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const tabType = tab.dataset.tab;
+                        if (tabType === 'public') {
+                            this.switchToPublicChat();
+                        } else if (tabType === 'private') {
+                            this.showPrivateChats();
+                        }
+                    });
+                });
+                
+                // Audio toggle
+                this.audioToggle.addEventListener('click', () => {
+                    this.toggleAudio();
                 });
                 
                 // Username input focus
@@ -745,6 +1134,17 @@
                         if (data.username !== this.username) {
                             this.showNotification(data.username, data.message);
                             this.playNotificationSound();
+                            this.updateUnreadCount('public', 1);
+                        }
+                    });
+                    
+                    // Private message events
+                    this.socket.on('receive-private-message', (data) => {
+                        this.handlePrivateMessage(data);
+                        if (data.from !== this.username) {
+                            this.showNotification(`${data.from} (Riêng tư)`, data.message);
+                            this.playNotificationSound();
+                            this.updateUnreadCount('private', 1, data.from);
                         }
                     });
                     
@@ -787,9 +1187,11 @@
             
             initNotificationSound() {
                 // Create notification sound
-                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
                 this.playNotificationSound = () => {
-                    if (document.hidden) { // Only play sound when page is not visible
+                    if (!this.audioEnabled || (!document.hidden && document.hasFocus())) return;
+                    
+                    try {
+                        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
                         const oscillator = audioContext.createOscillator();
                         const gainNode = audioContext.createGain();
                         
@@ -804,8 +1206,108 @@
                         
                         oscillator.start(audioContext.currentTime);
                         oscillator.stop(audioContext.currentTime + 0.5);
+                    } catch (error) {
+                        console.error('Audio error:', error);
                     }
                 };
+            }
+            
+            setupImageHandling() {
+                // Handle image clicks in messages
+                this.chatMessages.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('message-image')) {
+                        this.showImageModal(e.target.src);
+                    }
+                });
+            }
+            
+            handleAvatarUpload(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                
+                if (!file.type.startsWith('image/')) {
+                    this.showLoginError('Vui lòng chọn file ảnh');
+                    return;
+                }
+                
+                if (file.size > 5 * 1024 * 1024) { // 5MB
+                    this.showLoginError('Ảnh không được vượt quá 5MB');
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const imageUrl = e.target.result;
+                    
+                    // Remove selected class from other options
+                    document.querySelectorAll('.avatar-option').forEach(opt => opt.classList.remove('selected'));
+                    
+                    // Create new avatar option or update existing one
+                    let customOption = document.querySelector('.avatar-option[data-custom="true"]');
+                    if (!customOption) {
+                        customOption = document.createElement('div');
+                        customOption.className = 'avatar-option';
+                        customOption.dataset.custom = 'true';
+                        this.avatarSelection.insertBefore(customOption, this.avatarSelection.lastElementChild);
+                    }
+                    
+                    customOption.innerHTML = `<img src="${imageUrl}" alt="Custom Avatar">`;
+                    customOption.classList.add('selected');
+                    this.avatar = imageUrl;
+                };
+                reader.readAsDataURL(file);
+            }
+            
+            handleImageUpload(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                
+                if (!file.type.startsWith('image/')) {
+                    alert('Vui lòng chọn file ảnh');
+                    return;
+                }
+                
+                if (file.size > 10 * 1024 * 1024) { // 10MB
+                    alert('Ảnh không được vượt quá 10MB');
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const imageUrl = e.target.result;
+                    this.sendImageMessage(imageUrl);
+                };
+                reader.readAsDataURL(file);
+                
+                // Reset input
+                e.target.value = '';
+            }
+            
+            insertLink() {
+                const url = prompt('Nhập URL:');
+                if (url) {
+                    const validUrl = this.validateAndFormatUrl(url);
+                    if (validUrl) {
+                        const currentText = this.messageInput.value;
+                        this.messageInput.value = currentText + (currentText ? ' ' : '') + validUrl;
+                        this.messageInput.focus();
+                    } else {
+                        alert('URL không hợp lệ');
+                    }
+                }
+            }
+            
+            validateAndFormatUrl(url) {
+                try {
+                    // Add protocol if missing
+                    if (!/^https?:\/\//i.test(url)) {
+                        url = 'https://' + url;
+                    }
+                    new URL(url);
+                    return url;
+                } catch {
+                    return null;
+                }
             }
             
             handleLogin() {
@@ -840,12 +1342,13 @@
                 // Update UI
                 this.currentUsername.textContent = this.username;
                 this.currentRoom.textContent = `Phòng: ${this.room}`;
-                this.currentUserAvatar.textContent = this.avatar;
                 this.roomName.textContent = this.room;
+                this.updateUserAvatar(this.currentUserAvatar, this.avatar);
                 
                 // Hide login modal and show chat
                 this.loginModal.classList.add('hidden');
                 this.chatApp.classList.remove('hidden');
+                this.audioSettings.classList.remove('hidden');
                 
                 // Enable message input
                 this.messageInput.disabled = false;
@@ -893,18 +1396,52 @@
                 
                 const messageId = Date.now() + Math.random().toString(36).substr(2, 9);
                 
-                this.socket.emit('send-message', {
-                    messageId: messageId,
-                    message: message,
-                    room: this.room,
-                    avatar: this.avatar
-                });
+                if (this.currentChatType === 'private' && this.currentPrivateUser) {
+                    this.socket.emit('send-private-message', {
+                        messageId: messageId,
+                        message: message,
+                        to: this.currentPrivateUser,
+                        avatar: this.avatar
+                    });
+                } else {
+                    this.socket.emit('send-message', {
+                        messageId: messageId,
+                        message: message,
+                        room: this.room,
+                        avatar: this.avatar
+                    });
+                }
                 
                 this.messageInput.value = '';
+                this.messageInput.style.height = 'auto';
                 this.messageInput.focus();
                 
                 // Stop typing indicator
                 this.socket.emit('typing', { isTyping: false });
+            }
+            
+            sendImageMessage(imageUrl) {
+                if (!this.isConnected) return;
+                
+                const messageId = Date.now() + Math.random().toString(36).substr(2, 9);
+                
+                if (this.currentChatType === 'private' && this.currentPrivateUser) {
+                    this.socket.emit('send-private-message', {
+                        messageId: messageId,
+                        message: '[Hình ảnh]',
+                        image: imageUrl,
+                        to: this.currentPrivateUser,
+                        avatar: this.avatar
+                    });
+                } else {
+                    this.socket.emit('send-message', {
+                        messageId: messageId,
+                        message: '[Hình ảnh]',
+                        image: imageUrl,
+                        room: this.room,
+                        avatar: this.avatar
+                    });
+                }
             }
             
             displayMessage(data, scrollToBottom = true) {
@@ -919,10 +1456,20 @@
                 
                 const avatarEl = document.createElement('div');
                 avatarEl.className = 'message-avatar';
-                avatarEl.textContent = data.avatar || '😊';
+                this.updateUserAvatar(avatarEl, data.avatar || '😊');
                 
                 const contentEl = document.createElement('div');
                 contentEl.className = 'message-content';
+                
+                let messageText = this.escapeHtml(data.message);
+                
+                // Convert URLs to clickable links
+                messageText = this.convertUrlsToLinks(messageText);
+                
+                let imageHtml = '';
+                if (data.image) {
+                    imageHtml = `<img src="${data.image}" alt="Shared image" class="message-image">`;
+                }
                 
                 let statusHtml = '';
                 if (data.username === this.username) {
@@ -935,7 +1482,8 @@
                     <div class="message-header">
                         ${data.username === this.username ? 'Bạn' : data.username}
                     </div>
-                    <div class="message-text">${this.escapeHtml(data.message)}</div>
+                    <div class="message-text">${messageText}</div>
+                    ${imageHtml}
                     ${statusHtml}
                 `;
                 
@@ -961,6 +1509,222 @@
                 if (scrollToBottom) {
                     this.scrollToBottom();
                 }
+            }
+            
+            handlePrivateMessage(data) {
+                const chatKey = data.from === this.username ? data.to : data.from;
+                
+                if (!this.privateChats.has(chatKey)) {
+                    this.privateChats.set(chatKey, []);
+                }
+                
+                this.privateChats.get(chatKey).push(data);
+                
+                // If currently viewing this private chat, display the message
+                if (this.currentChatType === 'private' && this.currentPrivateUser === chatKey) {
+                    this.displayPrivateMessage(data);
+                }
+            }
+            
+            displayPrivateMessage(data) {
+                // Similar to displayMessage but for private messages
+                const messageEl = document.createElement('div');
+                messageEl.className = `message ${data.from === this.username ? 'sent' : 'received'}`;
+                messageEl.dataset.messageId = data.messageId || data.id;
+                
+                const timestamp = new Date(data.timestamp).toLocaleTimeString('vi-VN', {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                
+                const avatarEl = document.createElement('div');
+                avatarEl.className = 'message-avatar';
+                this.updateUserAvatar(avatarEl, data.avatar || '😊');
+                
+                const contentEl = document.createElement('div');
+                contentEl.className = 'message-content';
+                
+                let messageText = this.escapeHtml(data.message);
+                messageText = this.convertUrlsToLinks(messageText);
+                
+                let imageHtml = '';
+                if (data.image) {
+                    imageHtml = `<img src="${data.image}" alt="Shared image" class="message-image">`;
+                }
+                
+                let statusHtml = '';
+                if (data.from === this.username) {
+                    const status = this.messageStatus.get(data.messageId || data.id) || 'sent';
+                    const statusIcon = this.getStatusIcon(status);
+                    statusHtml = `<div class="message-status">${timestamp} <span class="status-icon">${statusIcon}</span></div>`;
+                }
+                
+                contentEl.innerHTML = `
+                    <div class="message-header">
+                        ${data.from === this.username ? 'Bạn' : data.from}
+                    </div>
+                    <div class="message-text">${messageText}</div>
+                    ${imageHtml}
+                    ${statusHtml}
+                `;
+                
+                messageEl.appendChild(avatarEl);
+                messageEl.appendChild(contentEl);
+                
+                this.chatMessages.appendChild(messageEl);
+                this.scrollToBottom();
+            }
+            
+            convertUrlsToLinks(text) {
+                const urlRegex = /(https?:\/\/[^\s]+)/gi;
+                return text.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+            }
+            
+            updateUserAvatar(element, avatar) {
+                if (avatar && avatar.startsWith('data:image/')) {
+                    element.innerHTML = `<img src="${avatar}" alt="Avatar">`;
+                } else {
+                    element.textContent = avatar || '😊';
+                }
+            }
+            
+            showImageModal(src) {
+                this.modalImage.src = src;
+                this.imageModal.style.display = 'flex';
+            }
+            
+            closeImageModal() {
+                this.imageModal.style.display = 'none';
+            }
+            
+            switchToPublicChat() {
+                this.currentChatType = 'public';
+                this.currentPrivateUser = null;
+                
+                // Update tabs
+                this.chatTabs.forEach(tab => {
+                    tab.classList.toggle('active', tab.dataset.tab === 'public');
+                });
+                
+                // Update header
+                this.roomName.textContent = this.room;
+                this.backButton.style.display = 'none';
+                
+                // Clear unread count
+                this.unreadCounts.public = 0;
+                this.updateNotificationBadges();
+                
+                // Reload public messages
+                this.loadPreviousMessages();
+            }
+            
+            showPrivateChats() {
+                // Show list of users for private chat selection
+                this.currentChatType = 'private';
+                
+                // Update tabs
+                this.chatTabs.forEach(tab => {
+                    tab.classList.toggle('active', tab.dataset.tab === 'private');
+                });
+                
+                // Update header
+                this.roomName.textContent = 'Chọn người để chat riêng';
+                this.backButton.style.display = 'block';
+                
+                // Clear messages area and show instruction
+                this.chatMessages.innerHTML = `
+                    <div class="system-message">
+                        Nhấp vào tên người dùng bên trái để bắt đầu chat riêng
+                    </div>
+                `;
+            }
+            
+            startPrivateChat(username) {
+                this.currentChatType = 'private';
+                this.currentPrivateUser = username;
+                
+                // Update header
+                this.roomName.textContent = `Chat riêng với ${username}`;
+                this.backButton.style.display = 'block';
+                
+                // Clear messages and load private chat history
+                this.chatMessages.innerHTML = '';
+                
+                if (this.privateChats.has(username)) {
+                    this.privateChats.get(username).forEach(msg => {
+                        this.displayPrivateMessage(msg);
+                    });
+                } else {
+                    this.chatMessages.innerHTML = `
+                        <div class="system-message">
+                            Bắt đầu cuộc trò chuyện riêng với ${username}
+                        </div>
+                    `;
+                }
+                
+                // Clear unread count for this user
+                this.unreadCounts.private.delete(username);
+                this.updateNotificationBadges();
+                
+                this.scrollToBottom();
+            }
+            
+            updateUnreadCount(type, count, user = null) {
+                if (!this.isPageVisible) {
+                    if (type === 'public' && this.currentChatType !== 'public') {
+                        this.unreadCounts.public += count;
+                    } else if (type === 'private' && user && this.currentPrivateUser !== user) {
+                        const currentCount = this.unreadCounts.private.get(user) || 0;
+                        this.unreadCounts.private.set(user, currentCount + count);
+                    }
+                    
+                    this.updateNotificationBadges();
+                }
+            }
+            
+            updateNotificationBadges() {
+                // Update public notifications
+                if (this.unreadCounts.public > 0) {
+                    this.publicNotifications.textContent = this.unreadCounts.public;
+                    this.publicNotifications.style.display = 'flex';
+                } else {
+                    this.publicNotifications.style.display = 'none';
+                }
+                
+                // Update private notifications
+                const totalPrivate = Array.from(this.unreadCounts.private.values()).reduce((sum, count) => sum + count, 0);
+                if (totalPrivate > 0) {
+                    this.privateNotifications.textContent = totalPrivate;
+                    this.privateNotifications.style.display = 'flex';
+                } else {
+                    this.privateNotifications.style.display = 'none';
+                }
+                
+                // Update user list badges
+                this.unreadCounts.private.forEach((count, username) => {
+                    const userItem = document.querySelector(`.user-item[data-username="${username}"]`);
+                    if (userItem) {
+                        let badge = userItem.querySelector('.unread-messages');
+                        if (count > 0) {
+                            if (!badge) {
+                                badge = document.createElement('div');
+                                badge.className = 'unread-messages';
+                                userItem.appendChild(badge);
+                            }
+                            badge.textContent = count;
+                            badge.style.display = 'flex';
+                        } else if (badge) {
+                            badge.style.display = 'none';
+                        }
+                    }
+                });
+            }
+            
+            toggleAudio() {
+                this.audioEnabled = !this.audioEnabled;
+                this.audioToggle.textContent = this.audioEnabled ? '🔊' : '🔇';
+                this.audioToggle.classList.toggle('muted', !this.audioEnabled);
+                this.audioToggle.title = this.audioEnabled ? 'Tắt âm thanh thông báo' : 'Bật âm thanh thông báo';
             }
             
             updateMessageStatus(messageId, status) {
@@ -1027,31 +1791,51 @@
                 this.userCount.textContent = users.length;
                 
                 users.forEach(user => {
+                    if (user.username === this.username) return; // Don't show current user
+                    
                     const userEl = document.createElement('div');
                     userEl.className = 'user-item';
+                    userEl.dataset.username = user.username;
                     
                     const joinTime = new Date(user.joinedAt).toLocaleTimeString('vi-VN', {
                         hour: '2-digit',
                         minute: '2-digit'
                     });
                     
+                    const avatarContainer = document.createElement('div');
+                    avatarContainer.className = 'user-avatar';
+                    this.updateUserAvatar(avatarContainer, user.avatar || '😊');
+                    
                     userEl.innerHTML = `
                         <div class="user-status"></div>
-                        <div class="user-avatar">${user.avatar || '😊'}</div>
-                        <div>
-                            <div>${this.escapeHtml(user.username)}</div>
-                            <div style="font-size: 0.8em; color: #6b7280;">Tham gia lúc ${joinTime}</div>
-                        </div>
+                        <div>${this.escapeHtml(user.username)}</div>
+                        <div style="font-size: 0.8em; color: #6b7280;">Tham gia lúc ${joinTime}</div>
                     `;
+                    
+                    userEl.insertBefore(avatarContainer, userEl.children[1]);
+                    
+                    // Add click handler for private chat
+                    userEl.addEventListener('click', () => {
+                        if (this.currentChatType === 'private') {
+                            this.startPrivateChat(user.username);
+                        }
+                    });
                     
                     this.usersList.appendChild(userEl);
                 });
+                
+                // Update notification badges
+                this.updateNotificationBadges();
             }
             
             handleTyping() {
                 if (!this.isConnected) return;
                 
-                this.socket.emit('typing', { isTyping: true, avatar: this.avatar });
+                this.socket.emit('typing', { 
+                    isTyping: true, 
+                    avatar: this.avatar,
+                    room: this.currentChatType === 'private' ? this.currentPrivateUser : this.room
+                });
                 
                 // Clear previous timeout
                 if (this.typingTimeout) {
@@ -1065,6 +1849,14 @@
             }
             
             handleUserTyping(data) {
+                // Only show typing indicator if it's for current chat
+                if (this.currentChatType === 'private' && data.room !== this.currentPrivateUser) {
+                    return;
+                }
+                if (this.currentChatType === 'public' && data.room !== this.room) {
+                    return;
+                }
+                
                 const typingId = `typing-${data.username}`;
                 let typingEl = document.getElementById(typingId);
                 
@@ -1073,10 +1865,14 @@
                         typingEl = document.createElement('div');
                         typingEl.id = typingId;
                         typingEl.className = 'typing-indicator';
-                        typingEl.innerHTML = `
-                            <div class="typing-avatar">${data.avatar || '😊'}</div>
-                            <span>${data.username} đang gõ...</span>
-                        `;
+                        
+                        const avatarEl = document.createElement('div');
+                        avatarEl.className = 'typing-avatar';
+                        this.updateUserAvatar(avatarEl, data.avatar || '😊');
+                        
+                        typingEl.appendChild(avatarEl);
+                        typingEl.appendChild(document.createTextNode(`${data.username} đang gõ...`));
+                        
                         this.chatMessages.appendChild(typingEl);
                         this.scrollToBottom();
                     }
@@ -1138,6 +1934,11 @@
                 e.returnValue = 'Bạn có chắc muốn rời khỏi phòng chat?';
             }
         });
+        
+        // Request notification permission
+        if ('Notification' in window && Notification.permission === 'default') {
+            Notification.requestPermission();
+        }
     </script>
 </body>
 </html>

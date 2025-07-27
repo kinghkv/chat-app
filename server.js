@@ -11,7 +11,8 @@ const io = socketIo(server, {
     cors: {
         origin: "*",
         methods: ["GET", "POST"]
-    }
+    },
+    maxHttpBufferSize: 1e8 // 100MB for image uploads
 });
 
 // MongoDB Schemas
@@ -37,6 +38,10 @@ const messageSchema = new mongoose.Schema({
         type: String,
         default: '😊'
     },
+    image: {
+        type: String, // Base64 image data
+        default: null
+    },
     timestamp: {
         type: Date,
         default: Date.now
@@ -44,6 +49,59 @@ const messageSchema = new mongoose.Schema({
     socketId: {
         type: String,
         required: true
+    },
+    messageId: {
+        type: String,
+        required: true
+    },
+    status: {
+        type: String,
+        enum: ['sent', 'delivered', 'read'],
+        default: 'sent'
+    },
+    deliveredTo: [{
+        userId: String,
+        timestamp: { type: Date, default: Date.now }
+    }],
+    readBy: [{
+        userId: String,
+        timestamp: { type: Date, default: Date.now }
+    }]
+}, {
+    timestamps: true
+});
+
+// Private message schema
+const privateMessageSchema = new mongoose.Schema({
+    from: {
+        type: String,
+        required: true,
+        trim: true,
+        maxlength: 50
+    },
+    to: {
+        type: String,
+        required: true,
+        trim: true,
+        maxlength: 50
+    },
+    message: {
+        type: String,
+        required: true,
+        trim: true,
+        maxlength: 1000
+    },
+    avatar: {
+        type: String,
+        default: '😊'
+    },
+    image: {
+        type: String, // Base64 image data
+        default: null
+    },
+    timestamp: {
+        type: Date,
+        default: Date.now
     },
     messageId: {
         type: String,
@@ -109,6 +167,7 @@ const userSchema = new mongoose.Schema({
 
 // Create models
 const Message = mongoose.model('Message', messageSchema);
+const PrivateMessage = mongoose.model('PrivateMessage', privateMessageSchema);
 const User = mongoose.model('User', userSchema);
 
 // Kết nối MongoDB
@@ -144,8 +203,8 @@ async function connectMongoDB() {
 
 // Middleware
 app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: '50mb' })); // Increase limit for images
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 // Content Security Policy
 app.use((req, res, next) => {
@@ -209,6 +268,42 @@ app.get('/api/messages/:room', async (req, res) => {
     }
 });
 
+// Get private messages between two users
+app.get('/api/private-messages/:user1/:user2', async (req, res) => {
+    try {
+        if (mongoose.connection.readyState !== 1) {
+            return res.status(503).json({
+                success: false,
+                error: 'Database không có sẵn'
+            });
+        }
+
+        const { user1, user2 } = req.params;
+        const limit = parseInt(req.query.limit) || 50;
+        
+        const messages = await PrivateMessage.find({
+            $or: [
+                { from: user1, to: user2 },
+                { from: user2, to: user1 }
+            ]
+        })
+        .sort({ timestamp: -1 })
+        .limit(limit)
+        .lean();
+            
+        res.json({
+            success: true,
+            messages: messages.reverse()
+        });
+    } catch (error) {
+        console.error('[API] Lỗi lấy tin nhắn riêng:', error);
+        res.status(500).json({
+            success: false,
+            error: 'Không thể lấy tin nhắn riêng'
+        });
+    }
+});
+
 app.get('/api/users/:room', async (req, res) => {
     try {
         if (mongoose.connection.readyState !== 1) {
@@ -248,7 +343,8 @@ app.use((req, res) => {
 // In-memory storage backup
 const memoryStorage = {
     users: new Map(),
-    messages: []
+    messages: [],
+    privateMessages: []
 };
 
 // Socket.IO Logic
@@ -347,9 +443,9 @@ io.on('connection', (socket) => {
                 return;
             }
             
-            const { message, room = user.room, messageId, avatar = user.avatar } = data;
+            const { message, room = user.room, messageId, avatar = user.avatar, image } = data;
             
-            if (!message || message.trim().length === 0) {
+            if ((!message || message.trim().length === 0) && !image) {
                 return;
             }
             
@@ -357,11 +453,12 @@ io.on('connection', (socket) => {
                 id: messageId || (Date.now() + Math.random()),
                 messageId: messageId || (Date.now() + Math.random().toString(36).substr(2, 9)),
                 username: user.username,
-                message: message.trim(),
+                message: message ? message.trim() : '[Hình ảnh]',
                 timestamp: new Date(),
                 room: room,
                 socketId: socket.id,
                 avatar: avatar,
+                image: image || null,
                 status: 'sent'
             };
             
@@ -383,11 +480,84 @@ io.on('connection', (socket) => {
             
             io.to(room).emit('receive-message', messageData);
             
-            console.log(`[MESSAGE] ${user.username}: ${message.substring(0, 50)}...`);
+            console.log(`[MESSAGE] ${user.username}: ${message ? message.substring(0, 50) + '...' : '[Image]'}`);
             
         } catch (error) {
             console.error('[SOCKET] Lỗi gửi tin nhắn:', error);
             socket.emit('message-error', 'Không thể gửi tin nhắn');
+        }
+    });
+    
+    socket.on('send-private-message', async (data) => {
+        try {
+            let user;
+            
+            if (mongoose.connection.readyState === 1) {
+                user = await User.findOne({ socketId: socket.id, isOnline: true });
+            } else {
+                user = memoryStorage.users.get(socket.id);
+            }
+            
+            if (!user) {
+                socket.emit('message-error', 'Bạn cần đăng ký trước khi gửi tin nhắn');
+                return;
+            }
+            
+            const { message, to, messageId, avatar = user.avatar, image } = data;
+            
+            if ((!message || message.trim().length === 0) && !image) {
+                return;
+            }
+            
+            // Find recipient
+            let recipient;
+            if (mongoose.connection.readyState === 1) {
+                recipient = await User.findOne({ username: to, isOnline: true });
+            } else {
+                recipient = Array.from(memoryStorage.users.values())
+                    .find(u => u.username === to && u.isOnline);
+            }
+            
+            if (!recipient) {
+                socket.emit('message-error', 'Người nhận không tồn tại hoặc đã offline');
+                return;
+            }
+            
+            const messageData = {
+                messageId: messageId || (Date.now() + Math.random().toString(36).substr(2, 9)),
+                from: user.username,
+                to: to,
+                message: message ? message.trim() : '[Hình ảnh]',
+                timestamp: new Date(),
+                avatar: avatar,
+                image: image || null,
+                status: 'sent'
+            };
+            
+            if (mongoose.connection.readyState === 1) {
+                const newMessage = new PrivateMessage(messageData);
+                await newMessage.save();
+                
+                await User.updateOne(
+                    { socketId: socket.id },
+                    { lastActive: new Date() }
+                );
+            } else {
+                memoryStorage.privateMessages.push(messageData);
+                if (memoryStorage.privateMessages.length > 500) {
+                    memoryStorage.privateMessages = memoryStorage.privateMessages.slice(-500);
+                }
+            }
+            
+            // Send to both sender and recipient
+            socket.emit('receive-private-message', messageData);
+            socket.to(recipient.socketId).emit('receive-private-message', messageData);
+            
+            console.log(`[PRIVATE] ${user.username} -> ${to}: ${message ? message.substring(0, 50) + '...' : '[Image]'}`);
+            
+        } catch (error) {
+            console.error('[SOCKET] Lỗi gửi tin nhắn riêng:', error);
+            socket.emit('message-error', 'Không thể gửi tin nhắn riêng');
         }
     });
     
@@ -494,11 +664,27 @@ io.on('connection', (socket) => {
             }
             
             if (user) {
-                socket.broadcast.to(user.room).emit('user-typing', {
+                const typingData = {
                     username: user.username,
                     avatar: data.avatar || user.avatar,
-                    isTyping: data.isTyping
-                });
+                    isTyping: data.isTyping,
+                    room: data.room || user.room
+                };
+                
+                // Broadcast to appropriate room/user
+                if (data.room && data.room !== user.room) {
+                    // Private typing - send to specific user
+                    const targetUser = mongoose.connection.readyState === 1 
+                        ? await User.findOne({ username: data.room, isOnline: true })
+                        : Array.from(memoryStorage.users.values()).find(u => u.username === data.room && u.isOnline);
+                    
+                    if (targetUser) {
+                        socket.to(targetUser.socketId).emit('user-typing', typingData);
+                    }
+                } else {
+                    // Public typing - broadcast to room
+                    socket.broadcast.to(user.room).emit('user-typing', typingData);
+                }
             }
         } catch (error) {
             console.error('[SOCKET] Lỗi typing:', error);
