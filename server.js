@@ -51,4 +51,10 @@ io.on('connection', (socket) => {
 // --- EXPORT APP CHO VERCEL ---
 // KHÔNG dùng app.listen() nữa.
 // Thay vào đó, chúng ta export server để Vercel xử lý.
-module.exports = server;
+// ... toàn bộ code cũ của bạn ở trên ...
+
+// Dòng này được thêm lại để server có thể khởi động
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => console.log(`[SERVER] Máy chủ đang chạy tại cổng ${PORT}`));
+
+// Dòng "module.exports = server;" đã được xóa
