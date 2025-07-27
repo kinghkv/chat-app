@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
+    <title>An Lư Vip - Chat Room</title>
     <style>
         * {
             margin: 0;
@@ -57,8 +57,16 @@
         .login-form h2 {
             text-align: center;
             color: #4f46e5;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             font-size: 2em;
+        }
+        
+        .login-form .room-name {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
         }
         
         .form-group {
@@ -103,6 +111,11 @@
             background: #3730a3;
         }
         
+        .login-button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        
         .error-message {
             color: #dc2626;
             text-align: center;
@@ -110,6 +123,13 @@
             padding: 10px;
             background: #fee2e2;
             border-radius: 5px;
+            display: none;
+        }
+        
+        .loading {
+            text-align: center;
+            color: #4f46e5;
+            margin-top: 15px;
             display: none;
         }
         
@@ -191,6 +211,14 @@
             text-align: center;
             font-size: 1.5em;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .message-count {
+            font-size: 0.8em;
+            opacity: 0.9;
         }
         
         .chat-messages {
@@ -278,6 +306,11 @@
             border-color: #4f46e5;
         }
         
+        #messageInput:disabled {
+            background: #f3f4f6;
+            cursor: not-allowed;
+        }
+        
         #sendButton {
             padding: 12px 20px;
             background: #4f46e5;
@@ -292,6 +325,11 @@
         
         #sendButton:hover {
             background: #3730a3;
+        }
+        
+        #sendButton:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
         }
         
         .status {
@@ -311,363 +349,3 @@
             background: #fee2e2;
             color: #991b1b;
         }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .app-container {
-                flex-direction: column;
-                height: 100vh;
-                width: 100%;
-                border-radius: 0;
-            }
-            
-            .sidebar {
-                width: 100%;
-                max-height: 200px;
-            }
-            
-            .online-users {
-                max-height: 120px;
-            }
-        }
-        
-        .hidden {
-            display: none !important;
-        }
-    </style>
-</head>
-<body>
-    <!-- Login Modal -->
-    <div id="loginModal" class="login-modal">
-        <div class="login-form">
-            <h2>🚀 Tham gia Chat</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="usernameInput">Tên của bạn:</label>
-                    <input type="text" id="usernameInput" placeholder="Nhập tên của bạn..." maxlength="50" required>
-                </div>
-                <div class="form-group">
-                    <label for="roomInput">Phòng chat:</label>
-                    <input type="text" id="roomInput" placeholder="general" value="general" maxlength="30">
-                </div>
-                <button type="submit" class="login-button">Tham gia</button>
-                <div id="loginError" class="error-message"></div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Main App -->
-    <div class="app-container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <h3>💬 Chat App</h3>
-            </div>
-            
-            <div class="user-info">
-                <h3 id="currentUser">Loading...</h3>
-                <span id="currentRoom">Room: general</span>
-            </div>
-            
-            <div class="online-users">
-                <h4>
-                    <span class="user-status"></span>
-                    Đang online (<span id="userCount">0</span>)
-                </h4>
-                <div id="userList">
-                    <!-- User list will be populated here -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Chat Container -->
-        <div class="chat-container">
-            <div class="chat-header">
-                💬 Phòng Chat: <span id="roomName">general</span>
-            </div>
-            
-            <div id="status" class="status">
-                Đang kết nối...
-            </div>
-            
-            <div class="chat-messages" id="messages">
-                <!-- Messages will be displayed here -->
-            </div>
-            
-            <div id="typingIndicator"></div>
-            
-            <div class="chat-input">
-                <input type="text" id="messageInput" placeholder="Nhập tin nhắn của bạn..." autocomplete="off" disabled>
-                <button id="sendButton" disabled>Gửi</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        const socket = io();
-        
-        // DOM elements
-        const loginModal = document.getElementById('loginModal');
-        const loginForm = document.getElementById('loginForm');
-        const usernameInput = document.getElementById('usernameInput');
-        const roomInput = document.getElementById('roomInput');
-        const loginError = document.getElementById('loginError');
-        
-        const messagesDiv = document.getElementById('messages');
-        const messageInput = document.getElementById('messageInput');
-        const sendButton = document.getElementById('sendButton');
-        const statusDiv = document.getElementById('status');
-        const currentUser = document.getElementById('currentUser');
-        const currentRoom = document.getElementById('currentRoom');
-        const roomName = document.getElementById('roomName');
-        const userList = document.getElementById('userList');
-        const userCount = document.getElementById('userCount');
-        const typingIndicator = document.getElementById('typingIndicator');
-        
-        // App state
-        let isLoggedIn = false;
-        let currentUsername = '';
-        let currentRoomName = 'general';
-        let typingTimer;
-        let isTyping = false;
-        
-        // Show error message
-        function showError(message) {
-            loginError.textContent = message;
-            loginError.style.display = 'block';
-            setTimeout(() => {
-                loginError.style.display = 'none';
-            }, 5000);
-        }
-        
-        // Login form submission
-        loginForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const username = usernameInput.value.trim();
-            const room = roomInput.value.trim() || 'general';
-            
-            if (username.length < 2) {
-                showError('Tên phải có ít nhất 2 ký tự');
-                return;
-            }
-            
-            socket.emit('register-user', { username, room });
-        });
-        
-        // Socket events
-        socket.on('connect', () => {
-            statusDiv.textContent = '✅ Đã kết nối';
-            statusDiv.className = 'status connected';
-            console.log('Đã kết nối tới server');
-        });
-        
-        socket.on('disconnect', () => {
-            statusDiv.textContent = '❌ Mất kết nối';
-            statusDiv.className = 'status error';
-            messageInput.disabled = true;
-            sendButton.disabled = true;
-            console.log('Mất kết nối tới server');
-        });
-        
-        socket.on('registration-success', (data) => {
-            isLoggedIn = true;
-            currentUsername = data.username;
-            currentRoomName = data.room;
-            
-            loginModal.classList.add('hidden');
-            messageInput.disabled = false;
-            sendButton.disabled = false;
-            
-            currentUser.textContent = currentUsername;
-            currentRoom.textContent = `Room: ${currentRoomName}`;
-            roomName.textContent = currentRoomName;
-            
-            // Load previous messages
-            loadPreviousMessages(currentRoomName);
-            
-            displaySystemMessage(`Chào mừng ${currentUsername} đến với phòng ${currentRoomName}! 🎉`);
-        });
-        
-        socket.on('registration-error', (error) => {
-            showError(error);
-        });
-        
-        socket.on('user-joined', (data) => {
-            displaySystemMessage(data.message);
-        });
-        
-        socket.on('user-left', (data) => {
-            displaySystemMessage(data.message);
-        });
-        
-        socket.on('users-update', (users) => {
-            updateUserList(users);
-        });
-        
-        socket.on('receive-message', (data) => {
-            displayMessage(data);
-        });
-        
-        socket.on('user-typing', (data) => {
-            if (data.isTyping) {
-                showTyping(data.username);
-            } else {
-                hideTyping(data.username);
-            }
-        });
-        
-        // Load previous messages
-        async function loadPreviousMessages(room) {
-            try {
-                const response = await fetch(`/api/messages/${room}?limit=50`);
-                const data = await response.json();
-                
-                if (data.success && data.messages.length > 0) {
-                    messagesDiv.innerHTML = '';
-                    data.messages.forEach(message => {
-                        displayMessage({
-                            username: message.username,
-                            message: message.message,
-                            timestamp: new Date(message.timestamp)
-                        });
-                    });
-                }
-            } catch (error) {
-                console.error('Lỗi load tin nhắn:', error);
-            }
-        }
-        
-        // Update user list
-        function updateUserList(users) {
-            userCount.textContent = users.length;
-            userList.innerHTML = '';
-            
-            users.forEach(user => {
-                const userItem = document.createElement('div');
-                userItem.className = 'user-item';
-                userItem.innerHTML = `
-                    <span class="user-status"></span>
-                    <span>${user.username}</span>
-                `;
-                userList.appendChild(userItem);
-            });
-        }
-        
-        // Display message
-        function displayMessage(data) {
-            const messageElement = document.createElement('div');
-            const isOwnMessage = data.username === currentUsername;
-            
-            messageElement.className = `message ${isOwnMessage ? 'sent' : 'received'}`;
-            
-            const timestamp = new Date(data.timestamp).toLocaleTimeString('vi-VN', {
-                hour: '2-digit',
-                minute: '2-digit'
-            });
-            
-            if (isOwnMessage) {
-                messageElement.innerHTML = `
-                    <div class="message-header">${timestamp}</div>
-                    <div class="message-content">${escapeHtml(data.message)}</div>
-                `;
-            } else {
-                messageElement.innerHTML = `
-                    <div class="message-header">${data.username} • ${timestamp}</div>
-                    <div class="message-content">${escapeHtml(data.message)}</div>
-                `;
-            }
-            
-            messagesDiv.appendChild(messageElement);
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        }
-        
-        // Display system message
-        function displaySystemMessage(message) {
-            const messageElement = document.createElement('div');
-            messageElement.className = 'system-message';
-            messageElement.textContent = message;
-            messagesDiv.appendChild(messageElement);
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        }
-        
-        // Show typing indicator
-        function showTyping(username) {
-            hideTyping(); // Remove existing typing indicators
-            const typingElement = document.createElement('div');
-            typingElement.className = 'typing-indicator';
-            typingElement.id = `typing-${username}`;
-            typingElement.textContent = `${username} đang nhập...`;
-            typingIndicator.appendChild(typingElement);
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        }
-        
-        // Hide typing indicator
-        function hideTyping(username = null) {
-            if (username) {
-                const typingElement = document.getElementById(`typing-${username}`);
-                if (typingElement) {
-                    typingElement.remove();
-                }
-            } else {
-                typingIndicator.innerHTML = '';
-            }
-        }
-        
-        // Send message
-        function sendMessage() {
-            const message = messageInput.value.trim();
-            if (message && isLoggedIn) {
-                socket.emit('send-message', {
-                    message: message,
-                    room: currentRoomName
-                });
-                messageInput.value = '';
-                
-                // Stop typing indicator
-                if (isTyping) {
-                    socket.emit('typing', { isTyping: false });
-                    isTyping = false;
-                }
-            }
-        }
-        
-        // Escape HTML to prevent XSS
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-        
-        // Event listeners
-        sendButton.addEventListener('click', sendMessage);
-        
-        messageInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-        
-        // Typing indicator
-        messageInput.addEventListener('input', () => {
-            if (!isLoggedIn) return;
-            
-            if (!isTyping) {
-                socket.emit('typing', { isTyping: true });
-                isTyping = true;
-            }
-            
-            clearTimeout(typingTimer);
-            typingTimer = setTimeout(() => {
-                if (isTyping) {
-                    socket.emit('typing', { isTyping: false });
-                    isTyping = false;
-                }
-            }, 1000);
-        });
-        
-        // Auto-focus username input when page loads
-        usernameInput.focus();
-    </script>
-</body>
-</html>
