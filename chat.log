@@ -1,0 +1,1113 @@
+2025-07-21T00:41:26.435Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T00:41:26.451Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T00:41:27.623Z | [CONNECT] User 4KKKF2hGlE9nnaWBAAAB đã kết nối.
+2025-07-21T00:41:27.664Z | [SEEN] User undefined đã xem tin nhắn 687d8b4fff0f8c6457dae5fb.
+2025-07-21T00:41:27.746Z | [SEEN] User undefined đã xem tin nhắn 687d8afaff0f8c6457dae59f.
+2025-07-21T00:41:27.821Z | [CONNECT] User n4AsW2Ax989yHaWcAAAD đã kết nối.
+2025-07-21T00:42:04.491Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T00:42:04.507Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T00:42:55.678Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T00:42:55.694Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T00:43:33.699Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T00:43:33.716Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T00:48:19.676Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T00:48:19.692Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T00:48:22.090Z | [CONNECT] User y4fRuY-i_W6CCk2AAAAB đã kết nối.
+2025-07-21T00:48:26.527Z | [CONNECT] User Dmu-Mg9JM8uvqlYXAAAD đã kết nối.
+2025-07-21T00:48:30.269Z | [JOIN] User van (id: Dmu-Mg9JM8uvqlYXAAAD) đã tham gia.
+2025-07-21T00:48:34.764Z | [JOIN] User ban (id: y4fRuY-i_W6CCk2AAAAB) đã tham gia.
+2025-07-21T00:48:42.556Z | [MESSAGE] Từ van trong phòng Chung: alo
+2025-07-21T00:48:42.609Z | [DELIVERED] Tin nhắn 687d8e6a3758bf1276479539 đã được gửi tới ban.
+2025-07-21T00:48:42.619Z | [SEEN] User ban đã xem tin nhắn 687d8e6a3758bf1276479539.
+2025-07-21T00:48:53.700Z | [MESSAGE] Từ van trong phòng Chung: alo
+2025-07-21T00:48:53.720Z | [DELIVERED] Tin nhắn 687d8e753758bf127647953f đã được gửi tới ban.
+2025-07-21T00:48:53.721Z | [SEEN] User ban đã xem tin nhắn 687d8e753758bf127647953f.
+2025-07-21T00:49:08.892Z | [MESSAGE] Từ van trong phòng Chung: alo
+2025-07-21T00:49:08.911Z | [DELIVERED] Tin nhắn 687d8e843758bf1276479545 đã được gửi tới ban.
+2025-07-21T00:49:08.913Z | [SEEN] User ban đã xem tin nhắn 687d8e843758bf1276479545.
+2025-07-21T00:49:18.813Z | [MESSAGE] Từ ban trong phòng Học tập: oi
+2025-07-21T00:49:24.724Z | [MESSAGE] Từ ban trong phòng Chung: oi
+2025-07-21T00:49:24.742Z | [DELIVERED] Tin nhắn 687d8e943758bf127647954d đã được gửi tới van.
+2025-07-21T00:49:24.743Z | [SEEN] User van đã xem tin nhắn 687d8e943758bf127647954d.
+2025-07-21T00:52:04.387Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T00:52:04.404Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T00:52:05.168Z | [CONNECT] User D9btMuuK_5fDe2yKAAAB đã kết nối.
+2025-07-21T00:52:05.815Z | [CONNECT] User 2GIgTfJRPDZBAvL7AAAD đã kết nối.
+2025-07-21T00:52:08.054Z | [CONNECT] User 8Z2dmF7YqxkkEPctAAAF đã kết nối.
+2025-07-21T00:52:10.589Z | [JOIN] User hi (id: 8Z2dmF7YqxkkEPctAAAF) đã tham gia.
+2025-07-21T00:55:44.157Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T00:55:44.188Z | [CONNECT] User GXNbuGGByOoTxmuxAAAC đã kết nối.
+2025-07-21T00:55:44.207Z | [CONNECT] User R1EZEICM6e0e1dcBAAAD đã kết nối.
+2025-07-21T00:55:44.218Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T00:55:47.109Z | [CONNECT] User i_U-XoOruBXIcoy0AAAF đã kết nối.
+2025-07-21T00:55:49.589Z | [JOIN] User 123 (id: i_U-XoOruBXIcoy0AAAF) đã tham gia.
+2025-07-21T00:55:54.142Z | [CONNECT] User FqdWEuSPiYMeswO6AAAH đã kết nối.
+2025-07-21T00:55:56.765Z | [JOIN] User 456 (id: FqdWEuSPiYMeswO6AAAH) đã tham gia.
+2025-07-21T00:55:59.023Z | [MESSAGE] Từ 456 trong phòng Chung: alo
+2025-07-21T00:55:59.072Z | [DELIVERED] Tin nhắn 687d901f243c73303e0e4128 đã được gửi tới 123.
+2025-07-21T00:55:59.081Z | [SEEN] User 123 đã xem tin nhắn 687d901f243c73303e0e4128.
+2025-07-21T00:56:08.247Z | [MESSAGE] Từ 456 trong phòng Chung: alo
+2025-07-21T00:56:08.266Z | [DELIVERED] Tin nhắn 687d9028243c73303e0e412e đã được gửi tới 123.
+2025-07-21T00:56:08.269Z | [SEEN] User 123 đã xem tin nhắn 687d9028243c73303e0e412e.
+2025-07-21T00:56:12.329Z | [MESSAGE] Từ 456 trong phòng Chung: alo
+2025-07-21T00:56:12.345Z | [DELIVERED] Tin nhắn 687d902c243c73303e0e4134 đã được gửi tới 123.
+2025-07-21T00:56:12.347Z | [SEEN] User 123 đã xem tin nhắn 687d902c243c73303e0e4134.
+2025-07-21T01:00:49.347Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:00:49.363Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:00:52.566Z | [CONNECT] User 2PM9X3rvlYS8l-cCAAAB đã kết nối.
+2025-07-21T01:00:53.356Z | [CONNECT] User Us4h8Oo6YvM4xfKjAAAD đã kết nối.
+2025-07-21T01:00:53.809Z | [CONNECT] User aKK2gD2wNYDljK7GAAAF đã kết nối.
+2025-07-21T01:00:54.928Z | [CONNECT] User xZbftWQKi_E2Fk4DAAAH đã kết nối.
+2025-07-21T01:00:56.752Z | [JOIN] User alo (id: xZbftWQKi_E2Fk4DAAAH) đã tham gia.
+2025-07-21T01:00:59.419Z | [JOIN] User oi (id: Us4h8Oo6YvM4xfKjAAAD) đã tham gia.
+2025-07-21T01:01:01.913Z | [MESSAGE] Từ oi trong phòng Chung: alo
+2025-07-21T01:01:01.963Z | [DELIVERED] Tin nhắn 687d914d9b56e0fe25938e86 đã được gửi tới alo.
+2025-07-21T01:01:01.974Z | [SEEN] User alo đã xem tin nhắn 687d914d9b56e0fe25938e86.
+2025-07-21T01:01:07.244Z | [MESSAGE] Từ alo trong phòng Game: alo
+2025-07-21T01:01:12.963Z | [MESSAGE] Từ alo trong phòng Game: alo
+2025-07-21T01:01:17.200Z | [MESSAGE] Từ alo trong phòng Học tập: ád
+2025-07-21T01:01:19.816Z | [MESSAGE] Từ alo trong phòng Us4h8Oo6YvM4xfKjAAAD-xZbftWQKi_E2Fk4DAAAH: ád
+2025-07-21T01:01:25.268Z | [MESSAGE] Từ oi trong phòng Us4h8Oo6YvM4xfKjAAAD-xZbftWQKi_E2Fk4DAAAH: dsadsa
+2025-07-21T01:01:28.116Z | [MESSAGE] Từ oi trong phòng Học tập: dá
+2025-07-21T01:01:30.379Z | [MESSAGE] Từ oi trong phòng Game: adá
+2025-07-21T01:01:32.931Z | [MESSAGE] Từ oi trong phòng Chung: ád
+2025-07-21T01:01:41.772Z | [MESSAGE] Từ alo trong phòng Chung: sđá
+2025-07-21T01:01:41.790Z | [DELIVERED] Tin nhắn 687d91759b56e0fe25938e9d đã được gửi tới oi.
+2025-07-21T01:01:41.792Z | [SEEN] User oi đã xem tin nhắn 687d91759b56e0fe25938e9d.
+2025-07-21T01:01:41.793Z | [SEEN] User oi đã xem tin nhắn 687d91759b56e0fe25938e9d.
+2025-07-21T01:01:44.763Z | [MESSAGE] Từ oi trong phòng Chung: dsadá
+2025-07-21T01:01:44.782Z | [DELIVERED] Tin nhắn 687d91789b56e0fe25938ea5 đã được gửi tới alo.
+2025-07-21T01:01:44.784Z | [SEEN] User alo đã xem tin nhắn 687d91789b56e0fe25938ea5.
+2025-07-21T01:01:44.786Z | [SEEN] User alo đã xem tin nhắn 687d91789b56e0fe25938ea5.
+2025-07-21T01:01:48.228Z | [MESSAGE] Từ oi trong phòng Chung: dsadá
+2025-07-21T01:02:26.311Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:02:26.328Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:02:29.475Z | [CONNECT] User WbCv2RzJiYMcKZszAAAB đã kết nối.
+2025-07-21T01:02:30.810Z | [CONNECT] User 6w4T0-jrL3EaDHv-AAAD đã kết nối.
+2025-07-21T01:02:31.853Z | [JOIN] User 55 (id: WbCv2RzJiYMcKZszAAAB) đã tham gia.
+2025-07-21T01:02:35.168Z | [MESSAGE] Từ 55 trong phòng Chung: dsa
+2025-07-21T01:02:42.218Z | [MESSAGE] Từ undefined trong phòng Chung: 3423
+2025-07-21T01:02:42.244Z | [DELIVERED] Tin nhắn 687d91b2255f5099321281a1 đã được gửi tới 55.
+2025-07-21T01:02:45.716Z | [MESSAGE] Từ undefined trong phòng Chung: fdsfd
+2025-07-21T01:02:45.730Z | [DELIVERED] Tin nhắn 687d91b5255f5099321281a5 đã được gửi tới 55.
+2025-07-21T01:02:52.382Z | [SEEN] User 55 đã xem tin nhắn 687d91b2255f5099321281a1.
+2025-07-21T01:02:52.398Z | [SEEN] User 55 đã xem tin nhắn 687d91b5255f5099321281a5.
+2025-07-21T01:02:54.220Z | [MESSAGE] Từ 55 trong phòng Chung: rểw
+2025-07-21T01:03:00.630Z | [MESSAGE] Từ undefined trong phòng Chung: dsfds
+2025-07-21T01:03:00.646Z | [DELIVERED] Tin nhắn 687d91c4255f5099321281af đã được gửi tới 55.
+2025-07-21T01:03:00.648Z | [SEEN] User 55 đã xem tin nhắn 687d91c4255f5099321281af.
+2025-07-21T01:03:02.368Z | [MESSAGE] Từ 55 trong phòng Chung: dsadsa
+2025-07-21T01:06:38.154Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:06:38.172Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:06:38.325Z | [CONNECT] User gL74N2kkKDBIz2_eAAAC đã kết nối.
+2025-07-21T01:06:38.328Z | [CONNECT] User GUrlzsyltvtkxyT5AAAD đã kết nối.
+2025-07-21T01:06:52.787Z | [WARN] Socket gL74N2kkKDBIz2_eAAAC cố gắng chat mà không có tên.
+2025-07-21T01:08:51.682Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:08:51.705Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:08:53.811Z | [CONNECT] User 8n59uusDAFp5t6CVAAAB đã kết nối.
+2025-07-21T01:08:56.662Z | [JOIN] User 123 (id: 8n59uusDAFp5t6CVAAAB) đã tham gia.
+2025-07-21T01:08:56.665Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:09:02.624Z | [CONNECT] User Fu3kzuDNTnZWDTCiAAAD đã kết nối.
+2025-07-21T01:09:04.973Z | [JOIN] User 456 (id: Fu3kzuDNTnZWDTCiAAAD) đã tham gia.
+2025-07-21T01:09:04.975Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:09:09.230Z | [CONNECT] User 2As4934nKs5_JvTDAAAF đã kết nối.
+2025-07-21T01:09:14.372Z | [JOIN] User alo (id: 2As4934nKs5_JvTDAAAF) đã tham gia.
+2025-07-21T01:09:14.374Z | [JOIN ROOM] User alo vào phòng Chung.
+2025-07-21T01:09:18.659Z | [CONNECT] User W_mulnSnL9xiELimAAAH đã kết nối.
+2025-07-21T01:09:21.775Z | [CONNECT] User 9YwO41fI3qlAA0-CAAAJ đã kết nối.
+2025-07-21T01:09:50.721Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:09:50.737Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:09:53.454Z | [CONNECT] User jvyPZ3Art2UuzxlpAAAB đã kết nối.
+2025-07-21T01:09:53.616Z | [CONNECT] User 9OBkX0EH9jMmGMHpAAAD đã kết nối.
+2025-07-21T01:09:55.028Z | [CONNECT] User zxjtk6Yb0XwyJraQAAAF đã kết nối.
+2025-07-21T01:09:55.908Z | [CONNECT] User B0k6SBa5tc2vbeWdAAAH đã kết nối.
+2025-07-21T01:09:57.886Z | [JOIN] User 32 (id: B0k6SBa5tc2vbeWdAAAH) đã tham gia.
+2025-07-21T01:09:57.888Z | [JOIN ROOM] User 32 vào phòng Chung.
+2025-07-21T01:09:59.709Z | [CONNECT] User r5-NJ566-s9ZIv11AAAJ đã kết nối.
+2025-07-21T01:10:01.485Z | [JOIN] User 42432 (id: zxjtk6Yb0XwyJraQAAAF) đã tham gia.
+2025-07-21T01:10:01.487Z | [JOIN ROOM] User 42432 vào phòng Chung.
+2025-07-21T01:10:02.723Z | [CONNECT] User Bh9QWrMymeeHx4BVAAAL đã kết nối.
+2025-07-21T01:13:06.461Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:13:06.478Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:13:06.615Z | [CONNECT] User 8KQqQSxziQNqJprQAAAC đã kết nối.
+2025-07-21T01:13:06.624Z | [CONNECT] User _UuAgUMUMF2rMWkIAAAD đã kết nối.
+2025-07-21T01:13:09.931Z | [CONNECT] User om-Z00yMiDMp886YAAAF đã kết nối.
+2025-07-21T01:13:13.045Z | [CONNECT] User MWZP95nbCcwFaJfZAAAH đã kết nối.
+2025-07-21T01:13:15.334Z | [JOIN] User 123 (id: MWZP95nbCcwFaJfZAAAH) đã tham gia.
+2025-07-21T01:13:15.339Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:13:18.029Z | [JOIN] User 456 (id: om-Z00yMiDMp886YAAAF) đã tham gia.
+2025-07-21T01:13:18.031Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:13:20.263Z | [MESSAGE] Từ 456 trong phòng Chung: alo
+2025-07-21T01:13:23.499Z | [MESSAGE] Từ 123 trong phòng Chung: ơi
+2025-07-21T01:13:25.713Z | [MESSAGE] Từ 123 trong phòng Chung: ôiiwio
+2025-07-21T01:13:28.201Z | [MESSAGE] Từ 456 trong phòng Chung: vl
+2025-07-21T01:13:29.542Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:13:31.087Z | [MESSAGE] Từ 123 trong phòng Game: alo
+2025-07-21T01:13:32.395Z | [MESSAGE] Từ 123 trong phòng Game: fsd
+2025-07-21T01:13:35.420Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:13:36.165Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:13:37.085Z | [JOIN ROOM] User 456 vào phòng Game.
+2025-07-21T01:13:38.929Z | [MESSAGE] Từ 456 trong phòng Game: pơi
+2025-07-21T01:13:42.078Z | [MESSAGE] Từ 123 trong phòng Game: fnge
+2025-07-21T01:13:45.195Z | [MESSAGE] Từ 123 trong phòng Game: nghe
+2025-07-21T01:13:52.356Z | [MESSAGE] Từ 456 trong phòng Game: ơi
+2025-07-21T01:13:57.212Z | [JOIN ROOM] User 123 vào phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF.
+2025-07-21T01:13:58.943Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: alo
+2025-07-21T01:14:03.853Z | [JOIN ROOM] User 456 vào phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF.
+2025-07-21T01:14:07.100Z | [MESSAGE] Từ 456 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: ơi
+2025-07-21T01:14:08.988Z | [JOIN ROOM] User 123 vào phòng Học tập.
+2025-07-21T01:14:12.784Z | [MESSAGE] Từ 123 trong phòng Học tập: alo
+2025-07-21T01:14:14.236Z | [JOIN ROOM] User 456 vào phòng Game.
+2025-07-21T01:14:16.147Z | [MESSAGE] Từ 456 trong phòng Game: alo
+2025-07-21T01:14:18.188Z | [JOIN ROOM] User 456 vào phòng Học tập.
+2025-07-21T01:14:19.776Z | [MESSAGE] Từ 456 trong phòng Học tập: ơi
+2025-07-21T01:14:25.268Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:14:25.933Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:14:27.770Z | [MESSAGE] Từ 123 trong phòng Game: alo
+2025-07-21T01:14:31.133Z | [MESSAGE] Từ 456 trong phòng Học tập: alo
+2025-07-21T01:14:36.804Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:14:38.872Z | [MESSAGE] Từ 123 trong phòng Chung: alo
+2025-07-21T01:14:45.205Z | [MESSAGE] Từ 123 trong phòng Chung: 213
+2025-07-21T01:14:45.924Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:14:47.329Z | [MESSAGE] Từ 123 trong phòng Game: 432
+2025-07-21T01:14:48.452Z | [JOIN ROOM] User 123 vào phòng Học tập.
+2025-07-21T01:14:49.751Z | [MESSAGE] Từ 123 trong phòng Học tập: 321
+2025-07-21T01:14:51.204Z | [JOIN ROOM] User 456 vào phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF.
+2025-07-21T01:14:53.876Z | [MESSAGE] Từ 123 trong phòng Học tập: 321
+2025-07-21T01:14:56.676Z | [JOIN ROOM] User 123 vào phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF.
+2025-07-21T01:14:58.036Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: 321
+2025-07-21T01:14:59.396Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:15:01.724Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: 321
+2025-07-21T01:15:05.454Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: sfsd
+2025-07-21T01:15:06.924Z | [JOIN ROOM] User 456 vào phòng Game.
+2025-07-21T01:15:08.404Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: 423
+2025-07-21T01:15:09.596Z | [JOIN ROOM] User 456 vào phòng Học tập.
+2025-07-21T01:15:11.340Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: 43242
+2025-07-21T01:15:13.412Z | [JOIN ROOM] User 456 vào phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF.
+2025-07-21T01:15:18.116Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: 432432
+2025-07-21T01:15:20.172Z | [JOIN ROOM] User 456 vào phòng Học tập.
+2025-07-21T01:15:21.508Z | [MESSAGE] Từ 123 trong phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF: 432432
+2025-07-21T01:15:22.516Z | [JOIN ROOM] User 456 vào phòng MWZP95nbCcwFaJfZAAAH-om-Z00yMiDMp886YAAAF.
+2025-07-21T01:20:30.124Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:20:30.141Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:20:31.743Z | [CONNECT] User Ccq8roTobCZ9KfrtAAAB đã kết nối.
+2025-07-21T01:20:31.815Z | [CONNECT] User 9L5Tr3lybenyWmh6AAAD đã kết nối.
+2025-07-21T01:20:33.859Z | [CONNECT] User 2TbwRmAPxwr-gIs3AAAF đã kết nối.
+2025-07-21T01:20:39.937Z | [CONNECT] User pZK_dx2aAAb3WF0DAAAH đã kết nối.
+2025-07-21T01:20:44.738Z | [JOIN ROOM] User ád vào phòng Chung.
+2025-07-21T01:20:46.750Z | [JOIN ROOM] User ád vào phòng Chung.
+2025-07-21T01:20:48.838Z | [MESSAGE] Từ ád trong phòng Chung: ád
+2025-07-21T01:20:52.061Z | [MESSAGE] Từ ád trong phòng Chung: dsa
+2025-07-21T01:27:07.322Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:27:07.338Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:27:07.471Z | [CONNECT] User RmtDG75tsK_d5tt6AAAC đã kết nối.
+2025-07-21T01:27:07.478Z | [CONNECT] User FkrHV465OOuOw69BAAAD đã kết nối.
+2025-07-21T01:27:09.362Z | [CONNECT] User B2yetM814OvkbZUJAAAF đã kết nối.
+2025-07-21T01:27:13.473Z | [CONNECT] User jJqfVOLBv74zOwhqAAAH đã kết nối.
+2025-07-21T01:27:22.907Z | [MESSAGE] Từ 123 trong phòng Chung: alo
+2025-07-21T01:27:25.784Z | [MESSAGE] Từ 456 trong phòng Chung: ơi
+2025-07-21T01:27:28.909Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:27:32.499Z | [MESSAGE] Từ 123 trong phòng Game: a;l
+2025-07-21T01:27:35.471Z | [MESSAGE] Từ 123 trong phòng Game: sda\
+2025-07-21T01:27:37.532Z | [JOIN ROOM] User 123 vào phòng Học tập.
+2025-07-21T01:27:39.192Z | [MESSAGE] Từ 123 trong phòng Học tập: dsadsa
+2025-07-21T01:27:40.084Z | [JOIN ROOM] User 123 vào phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH.
+2025-07-21T01:27:41.350Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: dsadsa
+2025-07-21T01:27:42.516Z | [JOIN ROOM] User 456 vào phòng Game.
+2025-07-21T01:27:44.548Z | [JOIN ROOM] User 456 vào phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH.
+2025-07-21T01:27:47.376Z | [MESSAGE] Từ 456 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: dsa
+2025-07-21T01:27:49.508Z | [JOIN ROOM] User 123 vào phòng Học tập.
+2025-07-21T01:27:55.420Z | [JOIN ROOM] User 456 vào phòng Học tập.
+2025-07-21T01:27:58.585Z | [MESSAGE] Từ 456 trong phòng Học tập: dsá
+2025-07-21T01:28:01.652Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:28:05.332Z | [JOIN ROOM] User 456 vào phòng Game.
+2025-07-21T01:28:08.920Z | [MESSAGE] Từ 123 trong phòng Game: 11
+2025-07-21T01:28:10.871Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:12.081Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:12.317Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:12.501Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:12.663Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:12.815Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:12.975Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:13.272Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:13.415Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:13.583Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:19.324Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:28:20.836Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:28:21.993Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:22.304Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:22.454Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:22.595Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:22.743Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:22.877Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:23.024Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:24.877Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:28:26.549Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:26.727Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:26.864Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:27.012Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:27.154Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:27.826Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:29.102Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:29.272Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:29.403Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:29.548Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:28:31.900Z | [JOIN ROOM] User 123 vào phòng Học tập.
+2025-07-21T01:28:33.412Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:33.574Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:33.734Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:33.884Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:34.037Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:34.167Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:34.325Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:34.497Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:34.672Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:35.165Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:28:36.740Z | [JOIN ROOM] User 123 vào phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH.
+2025-07-21T01:28:37.832Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:37.992Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:38.303Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:38.445Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:38.598Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:38.750Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:38.888Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:39.040Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:39.232Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:39.988Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:28:55.956Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:28:57.646Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:57.838Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:58.063Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:58.561Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:58.806Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:59.055Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:28:59.339Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:29:02.244Z | [JOIN ROOM] User 456 vào phòng Game.
+2025-07-21T01:29:08.052Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:29:12.467Z | [MESSAGE] Từ 123 trong phòng Game: 11
+2025-07-21T01:29:12.946Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:13.119Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:13.296Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:13.471Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:13.639Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:13.816Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:14.015Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:14.262Z | [MESSAGE] Từ 123 trong phòng Game: 11
+2025-07-21T01:29:16.876Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:29:19.813Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:29:21.219Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:29:21.408Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:29:21.555Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:29:21.727Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:29:22.109Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:29:24.253Z | [JOIN ROOM] User 123 vào phòng Game.
+2025-07-21T01:29:25.823Z | [MESSAGE] Từ 123 trong phòng Game: 11
+2025-07-21T01:29:25.983Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:26.140Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:26.301Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:26.474Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:26.950Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:27.260Z | [MESSAGE] Từ 123 trong phòng Game: 11
+2025-07-21T01:29:27.825Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:28.076Z | [MESSAGE] Từ 123 trong phòng Game: 1
+2025-07-21T01:29:28.503Z | [MESSAGE] Từ 123 trong phòng Game: 11
+2025-07-21T01:29:32.396Z | [JOIN ROOM] User 456 vào phòng Game.
+2025-07-21T01:29:36.547Z | [MESSAGE] Từ 456 trong phòng Game: 1
+2025-07-21T01:29:42.028Z | [JOIN ROOM] User 456 vào phòng Học tập.
+2025-07-21T01:29:45.132Z | [MESSAGE] Từ 456 trong phòng Học tập: 1
+2025-07-21T01:29:45.692Z | [MESSAGE] Từ 456 trong phòng Học tập: 1
+2025-07-21T01:29:46.115Z | [MESSAGE] Từ 456 trong phòng Học tập: 1
+2025-07-21T01:29:47.829Z | [JOIN ROOM] User 123 vào phòng Học tập.
+2025-07-21T01:29:50.094Z | [MESSAGE] Từ 123 trong phòng Học tập: 1
+2025-07-21T01:29:51.588Z | [JOIN ROOM] User 456 vào phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH.
+2025-07-21T01:29:52.851Z | [MESSAGE] Từ 456 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:29:53.541Z | [MESSAGE] Từ 456 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 11
+2025-07-21T01:29:54.404Z | [MESSAGE] Từ 456 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:29:56.876Z | [JOIN ROOM] User 123 vào phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH.
+2025-07-21T01:29:57.819Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:29:58.601Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:29:58.900Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:29:59.396Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 1
+2025-07-21T01:30:00.786Z | [MESSAGE] Từ 123 trong phòng B2yetM814OvkbZUJAAAF-jJqfVOLBv74zOwhqAAAH: 12321
+2025-07-21T01:37:10.961Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:37:10.977Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:37:12.184Z | [CONNECT] User hVqjRTcgB0FjahruAAAB đã kết nối.
+2025-07-21T01:37:12.732Z | [CONNECT] User R9vPSFXeDeyGSCyVAAAD đã kết nối.
+2025-07-21T01:37:12.819Z | [CONNECT] User q_YXUGay4tQ5vjfWAAAF đã kết nối.
+2025-07-21T01:37:18.956Z | [CONNECT] User 4rMhn6kzzCl9jmX1AAAH đã kết nối.
+2025-07-21T01:37:31.769Z | [MESSAGE] Từ 123 trong phòng Chung: alo
+2025-07-21T01:37:33.853Z | [JOIN ROOM] User 456 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:37:36.715Z | [MESSAGE] Từ 123 trong phòng Chung: alo
+2025-07-21T01:37:42.205Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:37:47.275Z | [MESSAGE] Từ 456 trong phòng Chung: alo
+2025-07-21T01:37:54.212Z | [JOIN ROOM] User 123 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:37:56.401Z | [MESSAGE] Từ 456 trong phòng Chung: 1
+2025-07-21T01:37:56.977Z | [MESSAGE] Từ 456 trong phòng Chung: 2
+2025-07-21T01:37:57.534Z | [MESSAGE] Từ 456 trong phòng Chung: 3
+2025-07-21T01:37:58.025Z | [MESSAGE] Từ 456 trong phòng Chung: 4
+2025-07-21T01:37:59.009Z | [MESSAGE] Từ 456 trong phòng Chung: 5
+2025-07-21T01:37:59.725Z | [MESSAGE] Từ 456 trong phòng Chung: 6
+2025-07-21T01:38:00.316Z | [MESSAGE] Từ 456 trong phòng Chung: 7
+2025-07-21T01:38:00.860Z | [MESSAGE] Từ 456 trong phòng Chung: 8
+2025-07-21T01:38:01.417Z | [MESSAGE] Từ 456 trong phòng Chung: 9
+2025-07-21T01:38:03.180Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:38:11.701Z | [MESSAGE] Từ 123 trong phòng Chung: 1
+2025-07-21T01:38:12.378Z | [MESSAGE] Từ 123 trong phòng Chung: 2
+2025-07-21T01:38:12.897Z | [MESSAGE] Từ 123 trong phòng Chung: 3
+2025-07-21T01:38:13.452Z | [MESSAGE] Từ 123 trong phòng Chung: 4
+2025-07-21T01:38:13.934Z | [MESSAGE] Từ 123 trong phòng Chung: 5
+2025-07-21T01:38:14.443Z | [MESSAGE] Từ 123 trong phòng Chung: 6
+2025-07-21T01:38:15.139Z | [MESSAGE] Từ 123 trong phòng Chung: 7
+2025-07-21T01:38:15.733Z | [MESSAGE] Từ 123 trong phòng Chung: 8
+2025-07-21T01:38:16.198Z | [MESSAGE] Từ 123 trong phòng Chung: 9
+2025-07-21T01:38:18.540Z | [JOIN ROOM] User 456 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:38:19.420Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:38:20.076Z | [JOIN ROOM] User 456 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:38:20.940Z | [JOIN ROOM] User 123 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:38:22.852Z | [JOIN ROOM] User 123 vào phòng Chung.
+2025-07-21T01:38:23.333Z | [JOIN ROOM] User 123 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:38:26.780Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:38:27.301Z | [JOIN ROOM] User 456 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:38:27.972Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:38:28.637Z | [JOIN ROOM] User 456 vào phòng 4rMhn6kzzCl9jmX1AAAH-R9vPSFXeDeyGSCyVAAAD.
+2025-07-21T01:38:33.148Z | [JOIN ROOM] User 456 vào phòng Chung.
+2025-07-21T01:41:36.277Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:41:36.297Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:41:38.186Z | [CONNECT] User xClik4uWsEzfrI2KAAAB đã kết nối.
+2025-07-21T01:41:38.813Z | [CONNECT] User FO9j1KkEVEgMIMi2AAAD đã kết nối.
+2025-07-21T01:41:38.835Z | [WARN] Socket FO9j1KkEVEgMIMi2AAAD cố gắng join phòng mà không có tên.
+2025-07-21T01:41:43.820Z | [WARN] Socket xClik4uWsEzfrI2KAAAB cố gắng join phòng mà không có tên.
+2025-07-21T01:41:45.508Z | [WARN] Socket xClik4uWsEzfrI2KAAAB cố gắng join phòng mà không có tên.
+2025-07-21T01:41:47.392Z | [WARN] Socket xClik4uWsEzfrI2KAAAB cố gắng chat mà không có tên.
+2025-07-21T01:41:53.400Z | [WARN] Socket FO9j1KkEVEgMIMi2AAAD cố gắng chat mà không có tên.
+2025-07-21T01:42:10.219Z | [WARN] Socket xClik4uWsEzfrI2KAAAB cố gắng chat mà không có tên.
+2025-07-21T01:42:12.790Z | [WARN] Socket FO9j1KkEVEgMIMi2AAAD cố gắng chat mà không có tên.
+2025-07-21T01:51:52.185Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:51:52.210Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:51:57.175Z | [CONNECT] User zl16TdCfBL_28QQzAAAB đã kết nối.
+2025-07-21T01:52:50.676Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:52:50.692Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:56:24.338Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:56:24.354Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:56:26.886Z | [CONNECT] User Tk6kyu-Arz4J3jIQAAAB đã kết nối.
+2025-07-21T01:56:30.008Z | [CONNECT] User xU9QCEQ5bzsoVOeFAAAD đã kết nối.
+2025-07-21T01:56:31.742Z | [JOIN] User a1 (id: xU9QCEQ5bzsoVOeFAAAD) đã tham gia.
+2025-07-21T01:56:33.469Z | [JOIN] User a2 (id: Tk6kyu-Arz4J3jIQAAAB) đã tham gia.
+2025-07-21T01:56:37.055Z | [MESSAGE] Từ a2 trong phòng Chung: alo
+2025-07-21T01:56:39.213Z | [JOIN ROOM] User a1 vào phòng Tk6kyu-Arz4J3jIQAAAB-xU9QCEQ5bzsoVOeFAAAD.
+2025-07-21T01:56:40.914Z | [MESSAGE] Từ a2 trong phòng Chung: alo
+2025-07-21T01:56:43.629Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T01:56:53.845Z | [MESSAGE] Từ a1 trong phòng Chung: alo
+2025-07-21T01:56:57.011Z | [MESSAGE] Từ a2 trong phòng Chung: alo
+2025-07-21T01:56:58.332Z | [JOIN ROOM] User a2 vào phòng Tk6kyu-Arz4J3jIQAAAB-xU9QCEQ5bzsoVOeFAAAD.
+2025-07-21T01:57:00.081Z | [MESSAGE] Từ a2 trong phòng Tk6kyu-Arz4J3jIQAAAB-xU9QCEQ5bzsoVOeFAAAD: alo
+2025-07-21T01:57:01.732Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T01:57:02.781Z | [JOIN ROOM] User a2 vào phòng Tk6kyu-Arz4J3jIQAAAB-xU9QCEQ5bzsoVOeFAAAD.
+2025-07-21T01:57:03.605Z | [JOIN ROOM] User a1 vào phòng Tk6kyu-Arz4J3jIQAAAB-xU9QCEQ5bzsoVOeFAAAD.
+2025-07-21T01:57:07.604Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T01:57:08.596Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T01:57:09.380Z | [JOIN ROOM] User a2 vào phòng Tk6kyu-Arz4J3jIQAAAB-xU9QCEQ5bzsoVOeFAAAD.
+2025-07-21T01:59:42.398Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T01:59:42.415Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T01:59:42.831Z | [CONNECT] User SupzQt5aL3jawPlXAAAC đã kết nối.
+2025-07-21T01:59:42.840Z | [CONNECT] User TK9xoxiOgWTRxueeAAAD đã kết nối.
+2025-07-21T01:59:44.795Z | [CONNECT] User WPxwz9aDqSqUzKGfAAAF đã kết nối.
+2025-07-21T01:59:48.356Z | [CONNECT] User HM9pbBtp9rn_cm6NAAAH đã kết nối.
+2025-07-21T01:59:50.190Z | [JOIN] User a1 (id: HM9pbBtp9rn_cm6NAAAH) đã tham gia.
+2025-07-21T01:59:51.757Z | [JOIN] User a2 (id: WPxwz9aDqSqUzKGfAAAF) đã tham gia.
+2025-07-21T01:59:53.076Z | [JOIN ROOM] User a2 vào phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF.
+2025-07-21T01:59:55.025Z | [MESSAGE] Từ a2 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T01:59:59.179Z | [MESSAGE] Từ a2 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T01:59:59.899Z | [MESSAGE] Từ a2 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T02:00:01.460Z | [JOIN ROOM] User a1 vào phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF.
+2025-07-21T02:00:04.010Z | [MESSAGE] Từ a1 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T02:00:04.742Z | [MESSAGE] Từ a1 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T02:00:07.346Z | [MESSAGE] Từ a2 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T02:00:08.492Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:00:10.212Z | [MESSAGE] Từ a2 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T02:00:11.761Z | [MESSAGE] Từ a2 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T02:00:29.463Z | [MESSAGE] Từ a1 trong phòng Chung: alo
+2025-07-21T02:00:30.697Z | [MESSAGE] Từ a1 trong phòng Chung: alo
+2025-07-21T02:00:33.775Z | [MESSAGE] Từ a1 trong phòng Chung: alo
+2025-07-21T02:00:34.844Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:00:37.611Z | [MESSAGE] Từ a2 trong phòng Chung: alo
+2025-07-21T02:00:38.812Z | [JOIN ROOM] User a2 vào phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF.
+2025-07-21T02:00:40.291Z | [MESSAGE] Từ a2 trong phòng HM9pbBtp9rn_cm6NAAAH-WPxwz9aDqSqUzKGfAAAF: alo
+2025-07-21T02:00:44.555Z | [MESSAGE] Từ a1 trong phòng Chung: alo
+2025-07-21T02:00:46.700Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:05:53.088Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:05:53.104Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:05:53.136Z | [CONNECT] User udcDWek1FU6hXh4SAAAC đã kết nối.
+2025-07-21T02:05:53.143Z | [CONNECT] User D-cx5Qj2i5XMGNouAAAD đã kết nối.
+2025-07-21T02:05:54.723Z | [CONNECT] User BvPsFgMDsY9aCIVwAAAF đã kết nối.
+2025-07-21T02:05:59.989Z | [CONNECT] User FALotHmqYmvsdDhdAAAH đã kết nối.
+2025-07-21T02:06:01.861Z | [JOIN] User a1 (id: FALotHmqYmvsdDhdAAAH) đã tham gia.
+2025-07-21T02:06:09.005Z | [JOIN] User a2 (id: BvPsFgMDsY9aCIVwAAAF) đã tham gia.
+2025-07-21T02:06:10.117Z | [JOIN ROOM] User a2 vào phòng BvPsFgMDsY9aCIVwAAAF-FALotHmqYmvsdDhdAAAH.
+2025-07-21T02:06:12.026Z | [MESSAGE] Từ a2 trong phòng BvPsFgMDsY9aCIVwAAAF-FALotHmqYmvsdDhdAAAH: 1
+2025-07-21T02:06:16.117Z | [JOIN ROOM] User a1 vào phòng BvPsFgMDsY9aCIVwAAAF-FALotHmqYmvsdDhdAAAH.
+2025-07-21T02:06:20.451Z | [MESSAGE] Từ a1 trong phòng BvPsFgMDsY9aCIVwAAAF-FALotHmqYmvsdDhdAAAH: 1
+2025-07-21T02:06:24.573Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:06:27.081Z | [MESSAGE] Từ a1 trong phòng Chung: 1
+2025-07-21T02:06:28.781Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:10:10.921Z | [MESSAGE] Từ a2 trong phòng Chung: q
+2025-07-21T02:10:15.989Z | [JOIN ROOM] User a1 vào phòng BvPsFgMDsY9aCIVwAAAF-FALotHmqYmvsdDhdAAAH.
+2025-07-21T02:10:17.801Z | [MESSAGE] Từ a2 trong phòng Chung: 1
+2025-07-21T02:10:18.638Z | [MESSAGE] Từ a2 trong phòng Chung: 1
+2025-07-21T02:10:20.453Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:10:59.961Z | [DISCONNECT] User a2 đã ngắt kết nối.
+2025-07-21T02:11:00.175Z | [CONNECT] User 1jZAPVcuz1yUg559AAAJ đã kết nối.
+2025-07-21T02:11:03.237Z | [JOIN] User a1 (id: 1jZAPVcuz1yUg559AAAJ) đã tham gia.
+2025-07-21T02:11:07.717Z | [MESSAGE] Từ a1 trong phòng Chung: 1
+2025-07-21T02:11:08.915Z | [MESSAGE] Từ a1 trong phòng Chung: 2
+2025-07-21T02:11:09.243Z | [MESSAGE] Từ a1 trong phòng Chung: 3
+2025-07-21T02:11:13.252Z | [MESSAGE] Từ a1 trong phòng Chung: 1
+2025-07-21T02:11:13.850Z | [MESSAGE] Từ a1 trong phòng Chung: 2
+2025-07-21T02:11:14.267Z | [MESSAGE] Từ a1 trong phòng Chung: 3
+2025-07-21T02:11:18.673Z | [DISCONNECT] User a1 đã ngắt kết nối.
+2025-07-21T02:11:18.881Z | [CONNECT] User A9H1tzWvsTnZJ8qLAAAL đã kết nối.
+2025-07-21T02:11:21.557Z | [JOIN] User a3 (id: A9H1tzWvsTnZJ8qLAAAL) đã tham gia.
+2025-07-21T02:11:22.941Z | [MESSAGE] Từ a3 trong phòng Chung: 1
+2025-07-21T02:11:23.402Z | [MESSAGE] Từ a3 trong phòng Chung: 2
+2025-07-21T02:11:23.768Z | [MESSAGE] Từ a3 trong phòng Chung: 3
+2025-07-21T02:11:25.909Z | [JOIN ROOM] User a1 vào phòng A9H1tzWvsTnZJ8qLAAAL-FALotHmqYmvsdDhdAAAH.
+2025-07-21T02:11:27.305Z | [MESSAGE] Từ a3 trong phòng Chung: 1
+2025-07-21T02:11:27.687Z | [MESSAGE] Từ a3 trong phòng Chung: 2
+2025-07-21T02:11:28.104Z | [MESSAGE] Từ a3 trong phòng Chung: 3
+2025-07-21T02:11:29.908Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:11:34.415Z | [DISCONNECT] User a1 đã ngắt kết nối.
+2025-07-21T02:11:34.579Z | [CONNECT] User _UxD8gcOKwpQbqCwAAAN đã kết nối.
+2025-07-21T02:11:36.847Z | [JOIN] User a5 (id: _UxD8gcOKwpQbqCwAAAN) đã tham gia.
+2025-07-21T02:11:39.697Z | [MESSAGE] Từ a5 trong phòng Chung: a1
+2025-07-21T02:11:42.045Z | [JOIN ROOM] User a3 vào phòng A9H1tzWvsTnZJ8qLAAAL-_UxD8gcOKwpQbqCwAAAN.
+2025-07-21T02:11:44.172Z | [MESSAGE] Từ a5 trong phòng Chung: a1
+2025-07-21T02:11:45.525Z | [JOIN ROOM] User a3 vào phòng Chung.
+2025-07-21T02:11:49.052Z | [JOIN ROOM] User a3 vào phòng A9H1tzWvsTnZJ8qLAAAL-_UxD8gcOKwpQbqCwAAAN.
+2025-07-21T02:11:49.613Z | [JOIN ROOM] User a3 vào phòng Chung.
+2025-07-21T02:11:54.053Z | [JOIN ROOM] User a5 vào phòng A9H1tzWvsTnZJ8qLAAAL-_UxD8gcOKwpQbqCwAAAN.
+2025-07-21T02:11:54.621Z | [JOIN ROOM] User a5 vào phòng Chung.
+2025-07-21T02:14:35.996Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:14:36.013Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:14:37.534Z | [CONNECT] User JFDTsScg5N650FoyAAAB đã kết nối.
+2025-07-21T02:14:38.497Z | [CONNECT] User jICloFtAC_vErbwcAAAD đã kết nối.
+2025-07-21T02:14:39.819Z | [CONNECT] User wIZ3YP5qWUXEBruFAAAF đã kết nối.
+2025-07-21T02:14:42.053Z | [CONNECT] User 5CO7YAKrVBtGyYK1AAAH đã kết nối.
+2025-07-21T02:14:46.478Z | [JOIN] User a1 (id: 5CO7YAKrVBtGyYK1AAAH) đã tham gia.
+2025-07-21T02:14:53.805Z | [JOIN] User a2 (id: jICloFtAC_vErbwcAAAD) đã tham gia.
+2025-07-21T02:14:58.925Z | [JOIN ROOM] User a1 vào phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD.
+2025-07-21T02:15:00.666Z | [MESSAGE] Từ a1 trong phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD: 1
+2025-07-21T02:15:02.292Z | [JOIN ROOM] User a2 vào phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD.
+2025-07-21T02:15:04.412Z | [MESSAGE] Từ a1 trong phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD: 1
+2025-07-21T02:15:06.725Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:15:07.881Z | [MESSAGE] Từ a1 trong phòng Chung: 1
+2025-07-21T02:15:10.022Z | [MESSAGE] Từ a2 trong phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD: 1
+2025-07-21T02:15:12.036Z | [JOIN ROOM] User a1 vào phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD.
+2025-07-21T02:15:14.723Z | [MESSAGE] Từ a2 trong phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD: 1
+2025-07-21T02:15:16.327Z | [MESSAGE] Từ a1 trong phòng 5CO7YAKrVBtGyYK1AAAH-jICloFtAC_vErbwcAAAD: 1
+2025-07-21T02:15:17.532Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:15:18.835Z | [MESSAGE] Từ a2 trong phòng Chung: 2
+2025-07-21T02:15:20.076Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:21:49.102Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:21:49.119Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:21:49.834Z | [CONNECT] User 37mTgLi1nhSZPGPVAAAB đã kết nối.
+2025-07-21T02:21:50.443Z | [CONNECT] User YDFI27FZquoEQR0_AAAD đã kết nối.
+2025-07-21T02:21:50.953Z | [CONNECT] User TOaC-2tffVEG0lljAAAF đã kết nối.
+2025-07-21T02:21:55.147Z | [CONNECT] User ya5IkXwCsGk-72hdAAAH đã kết nối.
+2025-07-21T02:21:57.205Z | [JOIN] User a1 (id: ya5IkXwCsGk-72hdAAAH) đã tham gia.
+2025-07-21T02:21:58.789Z | [JOIN] User a2 (id: TOaC-2tffVEG0lljAAAF) đã tham gia.
+2025-07-21T02:22:01.613Z | [JOIN ROOM] User a1 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:22:04.796Z | [MESSAGE] Từ a2 trong phòng Chung: 1
+2025-07-21T02:22:09.364Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:22:13.213Z | [JOIN ROOM] User a1 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:22:15.245Z | [MESSAGE] Từ a2 trong phòng Chung: 2
+2025-07-21T02:22:16.946Z | [MESSAGE] Từ a2 trong phòng Chung: 3
+2025-07-21T02:22:19.420Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:22:23.794Z | [MESSAGE] Từ a2 trong phòng Chung: alo
+2025-07-21T02:22:26.293Z | [MESSAGE] Từ a1 trong phòng Chung: 23
+2025-07-21T02:22:29.413Z | [JOIN ROOM] User a1 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:22:30.077Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:22:31.252Z | [JOIN ROOM] User a2 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:22:32.124Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:22:44.653Z | [JOIN ROOM] User a2 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:22:49.737Z | [MESSAGE] Từ a2 trong phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH: a1
+2025-07-21T02:22:52.133Z | [JOIN ROOM] User a1 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:22:55.005Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:22:56.296Z | [MESSAGE] Từ a1 trong phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH: a2
+2025-07-21T02:22:57.494Z | [JOIN ROOM] User a2 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:23:00.240Z | [MESSAGE] Từ a2 trong phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH: a3
+2025-07-21T02:23:03.112Z | [MESSAGE] Từ a1 trong phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH: a4
+2025-07-21T02:23:04.349Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:23:06.037Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:23:10.148Z | [JOIN ROOM] User a1 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:23:12.333Z | [JOIN ROOM] User a2 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:23:20.980Z | [JOIN ROOM] User a1 vào phòng Chung.
+2025-07-21T02:23:21.781Z | [JOIN ROOM] User a1 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:23:22.613Z | [JOIN ROOM] User a2 vào phòng Chung.
+2025-07-21T02:23:23.038Z | [JOIN ROOM] User a2 vào phòng TOaC-2tffVEG0lljAAAF-ya5IkXwCsGk-72hdAAAH.
+2025-07-21T02:26:04.015Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:26:04.032Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:26:04.106Z | [CONNECT] User SB_MAZlXH_7jIpLKAAAC đã kết nối.
+2025-07-21T02:26:04.115Z | [CONNECT] User -ilOnMbfxY5-xFxzAAAD đã kết nối.
+2025-07-21T02:26:06.088Z | [CONNECT] User 9rsUw9vhrpImuxMyAAAF đã kết nối.
+2025-07-21T02:26:09.739Z | [CONNECT] User 8grxWnXy--1PwiXBAAAH đã kết nối.
+2025-07-21T02:26:11.453Z | [JOIN] User a1 (id: 8grxWnXy--1PwiXBAAAH) đã tham gia.
+2025-07-21T02:26:13.133Z | [JOIN] User a2 (id: 9rsUw9vhrpImuxMyAAAF) đã tham gia.
+2025-07-21T02:26:14.565Z | [JOIN ROOM] User a2 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:26:15.565Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:26:17.353Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF: alo
+2025-07-21T02:26:24.010Z | [CONNECT] User bDogi3dVfeJYvkcUAAAJ đã kết nối.
+2025-07-21T02:26:29.971Z | [JOIN] User a1 (id: bDogi3dVfeJYvkcUAAAJ) đã tham gia.
+2025-07-21T02:26:33.805Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-bDogi3dVfeJYvkcUAAAJ.
+2025-07-21T02:26:35.056Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-bDogi3dVfeJYvkcUAAAJ: a
+2025-07-21T02:26:39.350Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-bDogi3dVfeJYvkcUAAAJ: dsad
+2025-07-21T02:26:39.715Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-bDogi3dVfeJYvkcUAAAJ: sad
+2025-07-21T02:26:39.857Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-bDogi3dVfeJYvkcUAAAJ: á
+2025-07-21T02:26:41.172Z | [JOIN ROOM] User a1 vào phòng 9rsUw9vhrpImuxMyAAAF-bDogi3dVfeJYvkcUAAAJ.
+2025-07-21T02:26:42.019Z | [MESSAGE] Từ a1 trong phòng 9rsUw9vhrpImuxMyAAAF-bDogi3dVfeJYvkcUAAAJ: dsa
+2025-07-21T02:26:42.180Z | [MESSAGE] Từ a1 trong phòng 9rsUw9vhrpImuxMyAAAF-bDogi3dVfeJYvkcUAAAJ: d
+2025-07-21T02:26:42.447Z | [MESSAGE] Từ a1 trong phòng 9rsUw9vhrpImuxMyAAAF-bDogi3dVfeJYvkcUAAAJ: á
+2025-07-21T02:26:42.629Z | [MESSAGE] Từ a1 trong phòng 9rsUw9vhrpImuxMyAAAF-bDogi3dVfeJYvkcUAAAJ: d
+2025-07-21T02:26:43.204Z | [MESSAGE] Từ a1 trong phòng 9rsUw9vhrpImuxMyAAAF-bDogi3dVfeJYvkcUAAAJ: á
+2025-07-21T02:26:45.828Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-bDogi3dVfeJYvkcUAAAJ.
+2025-07-21T02:26:57.414Z | [DISCONNECT] User a1 đã ngắt kết nối.
+2025-07-21T02:26:57.465Z | [CONNECT] User BOaDTzKf8Am_L3d_AAAL đã kết nối.
+2025-07-21T02:26:59.549Z | [JOIN] User a3 (id: BOaDTzKf8Am_L3d_AAAL) đã tham gia.
+2025-07-21T02:27:02.268Z | [JOIN ROOM] User a3 vào phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:04.560Z | [MESSAGE] Từ a3 trong phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL: 1
+2025-07-21T02:27:06.525Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:07.245Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:07.836Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:08.277Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:10.284Z | [MESSAGE] Từ a3 trong phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL: a
+2025-07-21T02:27:12.541Z | [JOIN ROOM] User a2 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:12.917Z | [JOIN ROOM] User a2 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:13.861Z | [JOIN ROOM] User a2 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:15.138Z | [MESSAGE] Từ a2 trong phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL: ád
+2025-07-21T02:27:16.724Z | [JOIN ROOM] User a3 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:18.499Z | [MESSAGE] Từ a2 trong phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL: dsa
+2025-07-21T02:27:19.709Z | [JOIN ROOM] User a3 vào phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:21.334Z | [MESSAGE] Từ a3 trong phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL: dsa
+2025-07-21T02:27:24.032Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL: dsa
+2025-07-21T02:27:25.116Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:26.580Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF: dsad
+2025-07-21T02:27:28.029Z | [JOIN ROOM] User a2 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:29.208Z | [MESSAGE] Từ a2 trong phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF: dsa
+2025-07-21T02:27:30.269Z | [JOIN ROOM] User a2 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:32.504Z | [MESSAGE] Từ a2 trong phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL: dsa
+2025-07-21T02:27:36.608Z | [MESSAGE] Từ a3 trong phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL: dsa
+2025-07-21T02:27:37.541Z | [JOIN ROOM] User a3 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:38.829Z | [MESSAGE] Từ a3 trong phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL: dsa
+2025-07-21T02:27:40.580Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:42.067Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL: dsa
+2025-07-21T02:27:43.556Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:44.698Z | [MESSAGE] Từ a1 trong phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF: dsa
+2025-07-21T02:27:46.149Z | [JOIN ROOM] User a2 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:47.346Z | [MESSAGE] Từ a2 trong phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF: dsa
+2025-07-21T02:27:48.533Z | [JOIN ROOM] User a2 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:48.949Z | [JOIN ROOM] User a2 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:27:49.829Z | [JOIN ROOM] User a2 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:51.293Z | [JOIN ROOM] User a3 vào phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:51.844Z | [JOIN ROOM] User a3 vào phòng 9rsUw9vhrpImuxMyAAAF-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:52.468Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-BOaDTzKf8Am_L3d_AAAL.
+2025-07-21T02:27:52.917Z | [JOIN ROOM] User a1 vào phòng 8grxWnXy--1PwiXBAAAH-9rsUw9vhrpImuxMyAAAF.
+2025-07-21T02:31:06.781Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:31:06.797Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:31:06.859Z | [CONNECT] User lAFHjty6RXr8IoxQAAAB đã kết nối.
+2025-07-21T02:31:08.915Z | [CONNECT] User znbQJchNkD880VrGAAAD đã kết nối.
+2025-07-21T02:31:08.958Z | [CONNECT] User jynAWju5bUPzT3jKAAAF đã kết nối.
+2025-07-21T02:31:10.295Z | [CONNECT] User hYX-sEr5ovUdpGPgAAAH đã kết nối.
+2025-07-21T02:31:13.854Z | [CONNECT] User ZEK5ukdV2TZFBFE9AAAJ đã kết nối.
+2025-07-21T02:31:15.157Z | [CONNECT] User DK3BsExTbYScYNOLAAAL đã kết nối.
+2025-07-21T02:31:17.605Z | [JOIN] User a1 (id: DK3BsExTbYScYNOLAAAL) đã tham gia.
+2025-07-21T02:31:22.709Z | [JOIN] User a2 (id: ZEK5ukdV2TZFBFE9AAAJ) đã tham gia.
+2025-07-21T02:31:26.869Z | [JOIN] User a3 (id: hYX-sEr5ovUdpGPgAAAH) đã tham gia.
+2025-07-21T02:31:29.325Z | [JOIN ROOM] User a3 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:32.798Z | [MESSAGE] Từ a3 trong phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH: a1
+2025-07-21T02:31:35.940Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:31:37.440Z | [MESSAGE] Từ a1 trong phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ: a2
+2025-07-21T02:31:38.741Z | [JOIN ROOM] User a2 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:40.079Z | [MESSAGE] Từ a2 trong phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH: a3
+2025-07-21T02:31:42.044Z | [JOIN ROOM] User a2 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:31:42.500Z | [JOIN ROOM] User a2 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:42.908Z | [JOIN ROOM] User a2 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:31:46.167Z | [MESSAGE] Từ a2 trong phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ: a1
+2025-07-21T02:31:49.061Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:50.815Z | [MESSAGE] Từ a1 trong phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH: a3
+2025-07-21T02:31:53.244Z | [JOIN ROOM] User a3 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:54.753Z | [MESSAGE] Từ a3 trong phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH: a2
+2025-07-21T02:31:56.196Z | [JOIN ROOM] User a3 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:56.780Z | [JOIN ROOM] User a3 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:57.964Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:31:58.532Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:31:59.340Z | [JOIN ROOM] User a2 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:00.044Z | [JOIN ROOM] User a2 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:32:04.104Z | [MESSAGE] Từ a2 trong phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ: 123
+2025-07-21T02:32:05.212Z | [JOIN ROOM] User a2 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:07.978Z | [MESSAGE] Từ a2 trong phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH: 123
+2025-07-21T02:32:09.333Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:32:11.632Z | [MESSAGE] Từ a1 trong phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ: 123
+2025-07-21T02:32:12.316Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:14.640Z | [MESSAGE] Từ a1 trong phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH: 123
+2025-07-21T02:32:17.720Z | [MESSAGE] Từ a3 trong phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH: 123
+2025-07-21T02:32:18.509Z | [JOIN ROOM] User a3 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:20.216Z | [MESSAGE] Từ a3 trong phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH: 123
+2025-07-21T02:32:21.764Z | [JOIN ROOM] User a3 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:22.094Z | [JOIN ROOM] User a3 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:22.468Z | [JOIN ROOM] User a3 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:23.196Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:32:23.636Z | [JOIN ROOM] User a1 vào phòng DK3BsExTbYScYNOLAAAL-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:24.540Z | [JOIN ROOM] User a2 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:32:25.164Z | [JOIN ROOM] User a2 vào phòng ZEK5ukdV2TZFBFE9AAAJ-hYX-sEr5ovUdpGPgAAAH.
+2025-07-21T02:32:33.981Z | [GROUP CREATED] User a2 tạo nhóm 'hihi' với ID: group-687da6c107bb9f16e3989f59
+2025-07-21T02:32:34.892Z | [JOIN ROOM] User a2 vào phòng group-687da6c107bb9f16e3989f59.
+2025-07-21T02:32:36.865Z | [MESSAGE] Từ a2 trong phòng group-687da6c107bb9f16e3989f59: 123
+2025-07-21T02:32:39.309Z | [JOIN ROOM] User a1 vào phòng group-687da6c107bb9f16e3989f59.
+2025-07-21T02:32:42.049Z | [MESSAGE] Từ a1 trong phòng group-687da6c107bb9f16e3989f59: 321
+2025-07-21T02:32:43.821Z | [JOIN ROOM] User a2 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:32:44.589Z | [JOIN ROOM] User a2 vào phòng group-687da6c107bb9f16e3989f59.
+2025-07-21T02:32:45.092Z | [JOIN ROOM] User a2 vào phòng DK3BsExTbYScYNOLAAAL-ZEK5ukdV2TZFBFE9AAAJ.
+2025-07-21T02:32:45.989Z | [JOIN ROOM] User a2 vào phòng group-687da6c107bb9f16e3989f59.
+2025-07-21T02:32:53.085Z | [GROUP CREATED] User a1 tạo nhóm 'hihi2' với ID: group-687da6d507bb9f16e3989f72
+2025-07-21T02:32:56.320Z | [MESSAGE] Từ a1 trong phòng group-687da6c107bb9f16e3989f59: 123
+2025-07-21T02:32:59.104Z | [MESSAGE] Từ a1 trong phòng group-687da6c107bb9f16e3989f59: 321
+2025-07-21T02:33:00.501Z | [JOIN ROOM] User a1 vào phòng group-687da6d507bb9f16e3989f72.
+2025-07-21T02:33:02.336Z | [MESSAGE] Từ a1 trong phòng group-687da6d507bb9f16e3989f72: 123
+2025-07-21T02:33:07.465Z | [MESSAGE] Từ a2 trong phòng group-687da6c107bb9f16e3989f59: 321
+2025-07-21T02:33:08.229Z | [JOIN ROOM] User a2 vào phòng group-687da6d507bb9f16e3989f72.
+2025-07-21T02:33:09.808Z | [MESSAGE] Từ a2 trong phòng group-687da6d507bb9f16e3989f72: 321
+2025-07-21T02:33:11.317Z | [JOIN ROOM] User a1 vào phòng group-687da6c107bb9f16e3989f59.
+2025-07-21T02:33:12.857Z | [MESSAGE] Từ a1 trong phòng group-687da6c107bb9f16e3989f59: 123
+2025-07-21T02:33:13.429Z | [JOIN ROOM] User a1 vào phòng group-687da6d507bb9f16e3989f72.
+2025-07-21T02:33:14.816Z | [MESSAGE] Từ a1 trong phòng group-687da6d507bb9f16e3989f72: 123
+2025-07-21T02:33:15.924Z | [JOIN ROOM] User a2 vào phòng group-687da6c107bb9f16e3989f59.
+2025-07-21T02:33:16.557Z | [JOIN ROOM] User a2 vào phòng group-687da6d507bb9f16e3989f72.
+2025-07-21T02:33:23.757Z | [GROUP CREATED] User a3 tạo nhóm 'hihi3' với ID: group-687da6f307bb9f16e3989fac
+2025-07-21T02:33:25.869Z | [JOIN ROOM] User a3 vào phòng group-687da6f307bb9f16e3989fac.
+2025-07-21T02:33:27.160Z | [MESSAGE] Từ a3 trong phòng group-687da6f307bb9f16e3989fac: 123
+2025-07-21T02:33:29.125Z | [JOIN ROOM] User a2 vào phòng group-687da6f307bb9f16e3989fac.
+2025-07-21T02:33:31.007Z | [MESSAGE] Từ a2 trong phòng group-687da6f307bb9f16e3989fac: 321
+2025-07-21T02:33:35.833Z | [MESSAGE] Từ a3 trong phòng group-687da6f307bb9f16e3989fac: 123
+2025-07-21T02:33:38.224Z | [MESSAGE] Từ a2 trong phòng group-687da6f307bb9f16e3989fac: 321
+2025-07-21T02:33:45.393Z | [GROUP CREATED] User a3 tạo nhóm 'hihi4' với ID: group-687da70907bb9f16e3989fcb
+2025-07-21T02:33:47.109Z | [JOIN ROOM] User a3 vào phòng group-687da70907bb9f16e3989fcb.
+2025-07-21T02:33:48.383Z | [MESSAGE] Từ a3 trong phòng group-687da70907bb9f16e3989fcb: 123
+2025-07-21T02:33:50.048Z | [MESSAGE] Từ a3 trong phòng group-687da70907bb9f16e3989fcb: 321
+2025-07-21T02:33:50.965Z | [JOIN ROOM] User a2 vào phòng group-687da70907bb9f16e3989fcb.
+2025-07-21T02:33:52.145Z | [MESSAGE] Từ a2 trong phòng group-687da70907bb9f16e3989fcb: 123
+2025-07-21T02:33:53.498Z | [MESSAGE] Từ a2 trong phòng group-687da70907bb9f16e3989fcb: 321
+2025-07-21T02:36:56.378Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:36:56.394Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:36:57.301Z | [CONNECT] User c_ZoSWTrNo34samDAAAB đã kết nối.
+2025-07-21T02:36:57.814Z | [CONNECT] User Z2ktl1C0FCQZYwyuAAAD đã kết nối.
+2025-07-21T02:36:58.318Z | [CONNECT] User GSX3gC5qsTP3cOpBAAAF đã kết nối.
+2025-07-21T02:36:59.799Z | [CONNECT] User W7ZZ0WsOPOlp9eMJAAAH đã kết nối.
+2025-07-21T02:37:03.276Z | [CONNECT] User GLaQyE3gYvien4-0AAAJ đã kết nối.
+2025-07-21T02:37:04.434Z | [CONNECT] User hKr8WsyjuZrze1aLAAAL đã kết nối.
+2025-07-21T02:37:06.350Z | [JOIN] User a1 (id: hKr8WsyjuZrze1aLAAAL) đã tham gia.
+2025-07-21T02:37:07.790Z | [JOIN] User a2 (id: GLaQyE3gYvien4-0AAAJ) đã tham gia.
+2025-07-21T02:37:09.462Z | [JOIN] User a3 (id: GSX3gC5qsTP3cOpBAAAF) đã tham gia.
+2025-07-21T02:37:10.989Z | [JOIN ROOM] User a2 vào phòng GLaQyE3gYvien4-0AAAJ-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:13.029Z | [JOIN ROOM] User a2 vào phòng GLaQyE3gYvien4-0AAAJ-GSX3gC5qsTP3cOpBAAAF.
+2025-07-21T02:37:13.781Z | [JOIN ROOM] User a1 vào phòng GLaQyE3gYvien4-0AAAJ-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:14.165Z | [JOIN ROOM] User a1 vào phòng GSX3gC5qsTP3cOpBAAAF-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:15.021Z | [JOIN ROOM] User a3 vào phòng GSX3gC5qsTP3cOpBAAAF-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:15.301Z | [JOIN ROOM] User a3 vào phòng GLaQyE3gYvien4-0AAAJ-GSX3gC5qsTP3cOpBAAAF.
+2025-07-21T02:37:16.713Z | [MESSAGE] Từ a3 trong phòng GLaQyE3gYvien4-0AAAJ-GSX3gC5qsTP3cOpBAAAF: a
+2025-07-21T02:37:22.430Z | [MESSAGE] Từ a2 trong phòng GLaQyE3gYvien4-0AAAJ-GSX3gC5qsTP3cOpBAAAF: a
+2025-07-21T02:37:24.525Z | [JOIN ROOM] User a2 vào phòng GLaQyE3gYvien4-0AAAJ-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:25.411Z | [MESSAGE] Từ a2 trong phòng GLaQyE3gYvien4-0AAAJ-hKr8WsyjuZrze1aLAAAL: a
+2025-07-21T02:37:27.301Z | [JOIN ROOM] User a3 vào phòng GSX3gC5qsTP3cOpBAAAF-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:29.232Z | [MESSAGE] Từ a3 trong phòng GSX3gC5qsTP3cOpBAAAF-hKr8WsyjuZrze1aLAAAL: a
+2025-07-21T02:37:30.509Z | [JOIN ROOM] User a1 vào phòng GLaQyE3gYvien4-0AAAJ-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:31.705Z | [MESSAGE] Từ a1 trong phòng GLaQyE3gYvien4-0AAAJ-hKr8WsyjuZrze1aLAAAL: a
+2025-07-21T02:37:32.805Z | [JOIN ROOM] User a1 vào phòng GSX3gC5qsTP3cOpBAAAF-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:33.928Z | [MESSAGE] Từ a1 trong phòng GSX3gC5qsTP3cOpBAAAF-hKr8WsyjuZrze1aLAAAL: a
+2025-07-21T02:37:47.046Z | [GROUP CREATED] User a1 tạo nhóm 'aa' (ID: group-687da7fbed461d5a9a75261c)
+2025-07-21T02:37:47.949Z | [JOIN ROOM] User a1 vào phòng group-687da7fbed461d5a9a75261c.
+2025-07-21T02:37:49.717Z | [JOIN ROOM] User a1 vào phòng GLaQyE3gYvien4-0AAAJ-hKr8WsyjuZrze1aLAAAL.
+2025-07-21T02:37:51.205Z | [JOIN ROOM] User a1 vào phòng group-687da7fbed461d5a9a75261c.
+2025-07-21T02:37:54.453Z | [GROUP UPDATE] User a1 đã thêm 1 thành viên vào nhóm aa
+2025-07-21T02:37:55.875Z | [MESSAGE] Từ a1 trong phòng group-687da7fbed461d5a9a75261c: a
+2025-07-21T02:37:56.956Z | [JOIN ROOM] User a3 vào phòng group-687da7fbed461d5a9a75261c.
+2025-07-21T02:37:58.213Z | [JOIN ROOM] User a2 vào phòng group-687da7fbed461d5a9a75261c.
+2025-07-21T02:39:54.940Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:39:54.963Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:39:56.959Z | [CONNECT] User BnnFOAhJ8trS4juMAAAB đã kết nối.
+2025-07-21T02:39:58.549Z | [CONNECT] User -7ZhQ8Kv4e2Wh8cQAAAD đã kết nối.
+2025-07-21T02:39:58.646Z | [CONNECT] User owq-cq7F0eGe1NlFAAAF đã kết nối.
+2025-07-21T02:40:02.355Z | [CONNECT] User ZzdxdR-JMVZPVye3AAAH đã kết nối.
+2025-07-21T02:40:04.050Z | [CONNECT] User mZmH05jAvhZmVBnoAAAJ đã kết nối.
+2025-07-21T02:40:06.854Z | [JOIN] User a1 (id: mZmH05jAvhZmVBnoAAAJ) đã tham gia.
+2025-07-21T02:40:12.909Z | [JOIN] User a2 (id: ZzdxdR-JMVZPVye3AAAH) đã tham gia.
+2025-07-21T02:40:14.909Z | [JOIN] User a3 (id: owq-cq7F0eGe1NlFAAAF) đã tham gia.
+2025-07-21T02:40:16.630Z | [JOIN ROOM] User a2 vào phòng ZzdxdR-JMVZPVye3AAAH-mZmH05jAvhZmVBnoAAAJ.
+2025-07-21T02:40:18.354Z | [MESSAGE] Từ a2 trong phòng ZzdxdR-JMVZPVye3AAAH-mZmH05jAvhZmVBnoAAAJ: 123
+2025-07-21T02:40:21.389Z | [JOIN ROOM] User a3 vào phòng mZmH05jAvhZmVBnoAAAJ-owq-cq7F0eGe1NlFAAAF.
+2025-07-21T02:40:23.053Z | [JOIN ROOM] User a1 vào phòng ZzdxdR-JMVZPVye3AAAH-mZmH05jAvhZmVBnoAAAJ.
+2025-07-21T02:40:25.037Z | [MESSAGE] Từ a1 trong phòng ZzdxdR-JMVZPVye3AAAH-mZmH05jAvhZmVBnoAAAJ: 123
+2025-07-21T02:40:34.621Z | [GROUP CREATED] User a2 tạo nhóm 'edê' (ID: group-687da8a2d0acb07dce198ce4)
+2025-07-21T02:40:35.469Z | [JOIN ROOM] User a2 vào phòng group-687da8a2d0acb07dce198ce4.
+2025-07-21T02:40:37.713Z | [MESSAGE] Từ a2 trong phòng group-687da8a2d0acb07dce198ce4: dsa213
+2025-07-21T02:40:38.853Z | [JOIN ROOM] User a1 vào phòng group-687da8a2d0acb07dce198ce4.
+2025-07-21T02:40:42.493Z | [GROUP UPDATE] User a2 đã thêm 1 thành viên vào nhóm edê
+2025-07-21T02:40:43.784Z | [MESSAGE] Từ a2 trong phòng group-687da8a2d0acb07dce198ce4: 321
+2025-07-21T02:44:40.562Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:44:40.578Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:44:42.353Z | [CONNECT] User XhCGhX56qz54KtXLAAAB đã kết nối.
+2025-07-21T02:44:42.816Z | [CONNECT] User srmP2qla4wQj7pq4AAAD đã kết nối.
+2025-07-21T02:44:44.546Z | [CONNECT] User kZohZo6aBd4fNHcgAAAF đã kết nối.
+2025-07-21T02:44:46.040Z | [CONNECT] User lnRNX2JBxt-WzwBkAAAH đã kết nối.
+2025-07-21T02:44:46.371Z | [CONNECT] User rqlRoG0JUxRR4h7fAAAJ đã kết nối.
+2025-07-21T02:44:48.574Z | [JOIN] User a1 (id: rqlRoG0JUxRR4h7fAAAJ) đã tham gia.
+2025-07-21T02:44:52.654Z | [JOIN] User a2 (id: XhCGhX56qz54KtXLAAAB) đã tham gia.
+2025-07-21T02:44:55.086Z | [JOIN] User a3 (id: lnRNX2JBxt-WzwBkAAAH) đã tham gia.
+2025-07-21T02:44:56.038Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:44:58.482Z | [MESSAGE] Từ a3 trong phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ: a1
+2025-07-21T02:45:01.429Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:01.901Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:02.621Z | [JOIN ROOM] User a1 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:03.317Z | [JOIN ROOM] User a1 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:05.748Z | [MESSAGE] Từ a1 trong phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ: a2
+2025-07-21T02:45:07.878Z | [JOIN ROOM] User a1 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:09.386Z | [MESSAGE] Từ a1 trong phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ: a3
+2025-07-21T02:45:11.837Z | [JOIN ROOM] User a3 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:12.189Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:13.205Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:15.564Z | [MESSAGE] Từ a2 trong phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ: a4
+2025-07-21T02:45:17.829Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:19.121Z | [MESSAGE] Từ a2 trong phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH: a1
+2025-07-21T02:45:21.549Z | [JOIN ROOM] User a1 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:22.333Z | [JOIN ROOM] User a1 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:23.157Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:24.205Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:25.981Z | [JOIN ROOM] User a3 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:27.457Z | [MESSAGE] Từ a3 trong phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH: a2
+2025-07-21T02:45:28.269Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:30.437Z | [JOIN ROOM] User a3 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:30.829Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:32.150Z | [JOIN ROOM] User a1 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:32.469Z | [JOIN ROOM] User a1 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:33.613Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:33.973Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:39.254Z | [GROUP CREATED] User a2 tạo nhóm 's2' (ID: group-687da9d3c07af6f91e1ef159)
+2025-07-21T02:45:40.301Z | [JOIN ROOM] User a2 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:45:41.592Z | [MESSAGE] Từ a2 trong phòng group-687da9d3c07af6f91e1ef159: a
+2025-07-21T02:45:43.020Z | [JOIN ROOM] User a1 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:45:44.536Z | [MESSAGE] Từ a1 trong phòng group-687da9d3c07af6f91e1ef159: a2
+2025-07-21T02:45:46.109Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:47.288Z | [MESSAGE] Từ a2 trong phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ: a
+2025-07-21T02:45:49.765Z | [JOIN ROOM] User a1 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:45:50.920Z | [MESSAGE] Từ a1 trong phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ: a
+2025-07-21T02:45:52.389Z | [JOIN ROOM] User a3 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:45:53.881Z | [MESSAGE] Từ a3 trong phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH: á
+2025-07-21T02:45:55.549Z | [JOIN ROOM] User a2 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:45:57.093Z | [JOIN ROOM] User a1 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:45:59.285Z | [GROUP UPDATE] User a1 đã thêm 1 thành viên vào nhóm s2
+2025-07-21T02:46:01.024Z | [MESSAGE] Từ a1 trong phòng group-687da9d3c07af6f91e1ef159: ád
+2025-07-21T02:46:07.143Z | [MESSAGE] Từ a1 trong phòng group-687da9d3c07af6f91e1ef159: dsa
+2025-07-21T02:46:09.744Z | [MESSAGE] Từ a2 trong phòng group-687da9d3c07af6f91e1ef159: dsa
+2025-07-21T02:46:11.720Z | [MESSAGE] Từ a2 trong phòng group-687da9d3c07af6f91e1ef159: sa
+2025-07-21T02:46:13.301Z | [JOIN ROOM] User a3 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:46:14.960Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: dá
+2025-07-21T02:46:16.546Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: rưqr
+2025-07-21T02:46:17.558Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:46:18.149Z | [JOIN ROOM] User a3 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:46:18.685Z | [JOIN ROOM] User a3 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:47:20.885Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:47:21.397Z | [JOIN ROOM] User a3 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:47:23.356Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:47:23.725Z | [JOIN ROOM] User a3 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:47:25.253Z | [JOIN ROOM] User a3 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:48:00.531Z | [MESSAGE] Từ a3 trong phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ: sad
+2025-07-21T02:48:06.168Z | [JOIN ROOM] User a1 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:48:06.733Z | [JOIN ROOM] User a1 vào phòng lnRNX2JBxt-WzwBkAAAH-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:48:07.405Z | [JOIN ROOM] User a1 vào phòng XhCGhX56qz54KtXLAAAB-rqlRoG0JUxRR4h7fAAAJ.
+2025-07-21T02:48:09.789Z | [JOIN ROOM] User a3 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:48:11.587Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: dsa
+2025-07-21T02:48:14.996Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: dsad
+2025-07-21T02:48:20.190Z | [JOIN ROOM] User a2 vào phòng XhCGhX56qz54KtXLAAAB-lnRNX2JBxt-WzwBkAAAH.
+2025-07-21T02:48:25.793Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: dsad
+2025-07-21T02:48:26.304Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sad
+2025-07-21T02:48:26.530Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: s
+2025-07-21T02:48:26.738Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: dsa
+2025-07-21T02:48:27.526Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sa
+2025-07-21T02:48:27.681Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: d
+2025-07-21T02:48:27.857Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sad
+2025-07-21T02:48:27.992Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sa
+2025-07-21T02:48:28.142Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: d
+2025-07-21T02:48:28.290Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sad
+2025-07-21T02:48:28.428Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sa
+2025-07-21T02:48:28.559Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: d
+2025-07-21T02:48:28.713Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sad
+2025-07-21T02:48:28.841Z | [MESSAGE] Từ a3 trong phòng group-687da9d3c07af6f91e1ef159: sa
+2025-07-21T02:48:31.365Z | [JOIN ROOM] User a2 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:48:33.709Z | [JOIN ROOM] User a1 vào phòng group-687da9d3c07af6f91e1ef159.
+2025-07-21T02:49:26.118Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:49:26.135Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:49:26.863Z | [CONNECT] User 5-y4Su8HREmYQqpXAAAB đã kết nối.
+2025-07-21T02:49:27.452Z | [CONNECT] User TYSDM5ruBVu2O8DBAAAD đã kết nối.
+2025-07-21T02:49:27.473Z | [CONNECT] User 3UyQDXMIky4RUmsMAAAF đã kết nối.
+2025-07-21T02:49:29.536Z | [CONNECT] User Go10LDKskHH1hEdoAAAH đã kết nối.
+2025-07-21T02:49:33.433Z | [CONNECT] User MbB5Mt26yckkeLrDAAAJ đã kết nối.
+2025-07-21T02:49:34.153Z | [CONNECT] User gT-6VWveetjQt3uUAAAL đã kết nối.
+2025-07-21T02:49:35.902Z | [JOIN] User a1 (id: gT-6VWveetjQt3uUAAAL) đã tham gia.
+2025-07-21T02:49:37.845Z | [JOIN] User a2 (id: MbB5Mt26yckkeLrDAAAJ) đã tham gia.
+2025-07-21T02:49:39.653Z | [JOIN] User a3 (id: Go10LDKskHH1hEdoAAAH) đã tham gia.
+2025-07-21T02:49:40.981Z | [JOIN ROOM] User a2 vào phòng Go10LDKskHH1hEdoAAAH-MbB5Mt26yckkeLrDAAAJ.
+2025-07-21T02:49:41.468Z | [JOIN ROOM] User a2 vào phòng MbB5Mt26yckkeLrDAAAJ-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:49:43.866Z | [MESSAGE] Từ a2 trong phòng MbB5Mt26yckkeLrDAAAJ-gT-6VWveetjQt3uUAAAL: 123
+2025-07-21T02:49:46.316Z | [JOIN ROOM] User a3 vào phòng Go10LDKskHH1hEdoAAAH-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:49:47.332Z | [JOIN ROOM] User a1 vào phòng MbB5Mt26yckkeLrDAAAJ-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:49:48.890Z | [MESSAGE] Từ a1 trong phòng MbB5Mt26yckkeLrDAAAJ-gT-6VWveetjQt3uUAAAL: 123
+2025-07-21T02:49:51.404Z | [JOIN ROOM] User a1 vào phòng Go10LDKskHH1hEdoAAAH-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:49:52.937Z | [MESSAGE] Từ a1 trong phòng Go10LDKskHH1hEdoAAAH-gT-6VWveetjQt3uUAAAL: 123
+2025-07-21T02:49:54.764Z | [JOIN ROOM] User a3 vào phòng Go10LDKskHH1hEdoAAAH-MbB5Mt26yckkeLrDAAAJ.
+2025-07-21T02:49:56.097Z | [MESSAGE] Từ a3 trong phòng Go10LDKskHH1hEdoAAAH-MbB5Mt26yckkeLrDAAAJ: 123
+2025-07-21T02:49:57.020Z | [JOIN ROOM] User a3 vào phòng Go10LDKskHH1hEdoAAAH-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:49:58.264Z | [MESSAGE] Từ a3 trong phòng Go10LDKskHH1hEdoAAAH-gT-6VWveetjQt3uUAAAL: 123
+2025-07-21T02:50:01.384Z | [MESSAGE] Từ a2 trong phòng MbB5Mt26yckkeLrDAAAJ-gT-6VWveetjQt3uUAAAL: 123
+2025-07-21T02:50:01.836Z | [JOIN ROOM] User a2 vào phòng Go10LDKskHH1hEdoAAAH-MbB5Mt26yckkeLrDAAAJ.
+2025-07-21T02:50:03.448Z | [MESSAGE] Từ a2 trong phòng Go10LDKskHH1hEdoAAAH-MbB5Mt26yckkeLrDAAAJ: 123
+2025-07-21T02:50:11.389Z | [GROUP CREATED] User a2 tạo nhóm 'áđs' (ID: group-687daae33dd631de8703aaac)
+2025-07-21T02:50:12.932Z | [JOIN ROOM] User a2 vào phòng group-687daae33dd631de8703aaac.
+2025-07-21T02:50:14.736Z | [MESSAGE] Từ a2 trong phòng group-687daae33dd631de8703aaac: 123
+2025-07-21T02:50:18.052Z | [JOIN ROOM] User a1 vào phòng group-687daae33dd631de8703aaac.
+2025-07-21T02:50:19.592Z | [MESSAGE] Từ a1 trong phòng group-687daae33dd631de8703aaac: 123
+2025-07-21T02:50:20.820Z | [JOIN ROOM] User a2 vào phòng Go10LDKskHH1hEdoAAAH-MbB5Mt26yckkeLrDAAAJ.
+2025-07-21T02:50:23.992Z | [MESSAGE] Từ a1 trong phòng group-687daae33dd631de8703aaac: 123
+2025-07-21T02:50:25.772Z | [JOIN ROOM] User a2 vào phòng group-687daae33dd631de8703aaac.
+2025-07-21T02:50:29.397Z | [GROUP UPDATE] User a2 đã thêm 1 thành viên vào nhóm áđs
+2025-07-21T02:50:31.904Z | [MESSAGE] Từ a2 trong phòng group-687daae33dd631de8703aaac: 123
+2025-07-21T02:50:37.701Z | [JOIN ROOM] User a3 vào phòng group-687daae33dd631de8703aaac.
+2025-07-21T02:50:39.065Z | [MESSAGE] Từ a3 trong phòng group-687daae33dd631de8703aaac: 321
+2025-07-21T02:50:47.909Z | [JOIN ROOM] User a1 vào phòng MbB5Mt26yckkeLrDAAAJ-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:50:49.261Z | [JOIN ROOM] User a1 vào phòng group-687daae33dd631de8703aaac.
+2025-07-21T02:50:50.517Z | [JOIN ROOM] User a1 vào phòng MbB5Mt26yckkeLrDAAAJ-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:50:50.973Z | [JOIN ROOM] User a1 vào phòng Go10LDKskHH1hEdoAAAH-gT-6VWveetjQt3uUAAAL.
+2025-07-21T02:58:36.151Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T02:58:36.168Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T02:58:36.199Z | [CONNECT] User KjDi2QgYORAOmX7hAAAB đã kết nối.
+2025-07-21T02:58:36.818Z | [CONNECT] User GHmIf1GsaCwGRVUrAAAD đã kết nối.
+2025-07-21T02:58:37.813Z | [CONNECT] User YDfZwD-twdAZvPrwAAAF đã kết nối.
+2025-07-21T02:58:39.692Z | [CONNECT] User 4lp6SuYpi-qZ4QN7AAAH đã kết nối.
+2025-07-21T02:58:41.577Z | [CONNECT] User dyul-DL_F5JDF1lEAAAJ đã kết nối.
+2025-07-21T02:58:43.793Z | [CONNECT] User 1Cf7VpIHNovmgqlWAAAL đã kết nối.
+2025-07-21T02:58:45.407Z | [JOIN] User a1 (id: 1Cf7VpIHNovmgqlWAAAL) đã tham gia.
+2025-07-21T02:58:47.109Z | [JOIN] User a2 (id: 4lp6SuYpi-qZ4QN7AAAH) đã tham gia.
+2025-07-21T02:58:48.766Z | [JOIN] User a3 (id: dyul-DL_F5JDF1lEAAAJ) đã tham gia.
+2025-07-21T02:58:52.869Z | [JOIN ROOM] User a2 vào phòng 1Cf7VpIHNovmgqlWAAAL-4lp6SuYpi-qZ4QN7AAAH.
+2025-07-21T02:58:54.308Z | [MESSAGE] Từ a2 trong phòng 1Cf7VpIHNovmgqlWAAAL-4lp6SuYpi-qZ4QN7AAAH: https://gemini.google.com/app/94b547ccbfc1b379
+2025-07-21T02:58:55.525Z | [JOIN ROOM] User a1 vào phòng 1Cf7VpIHNovmgqlWAAAL-4lp6SuYpi-qZ4QN7AAAH.
+2025-07-21T02:58:56.126Z | [JOIN ROOM] User a1 vào phòng 1Cf7VpIHNovmgqlWAAAL-dyul-DL_F5JDF1lEAAAJ.
+2025-07-21T02:58:56.477Z | [JOIN ROOM] User a1 vào phòng 1Cf7VpIHNovmgqlWAAAL-4lp6SuYpi-qZ4QN7AAAH.
+2025-07-21T02:58:58.133Z | [JOIN ROOM] User a3 vào phòng 1Cf7VpIHNovmgqlWAAAL-dyul-DL_F5JDF1lEAAAJ.
+2025-07-21T02:58:59.395Z | [MESSAGE] Từ a3 trong phòng 1Cf7VpIHNovmgqlWAAAL-dyul-DL_F5JDF1lEAAAJ: https://gemini.google.com/app/94b547ccbfc1b379
+2025-07-21T02:59:00.653Z | [JOIN ROOM] User a1 vào phòng 1Cf7VpIHNovmgqlWAAAL-dyul-DL_F5JDF1lEAAAJ.
+2025-07-21T03:03:10.694Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T03:03:10.711Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T03:03:10.807Z | [CONNECT] User lDrc-Ub5Oj2Y5DA7AAAB đã kết nối.
+2025-07-21T03:03:12.524Z | [CONNECT] User KZSp53AkDRn22yCIAAAD đã kết nối.
+2025-07-21T03:03:12.861Z | [CONNECT] User SLUrr4K6b6pgdnuzAAAF đã kết nối.
+2025-07-21T03:03:15.540Z | [CONNECT] User oqmisrQTGvluxYXiAAAH đã kết nối.
+2025-07-21T03:03:17.109Z | [CONNECT] User QekvE8i6Vxt9NwqiAAAJ đã kết nối.
+2025-07-21T03:03:18.973Z | [CONNECT] User EZRhFgotblm4ImguAAAL đã kết nối.
+2025-07-21T03:05:26.949Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T03:05:26.972Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T03:05:27.435Z | [CONNECT] User _VK4ySoAH2J1Dz-gAAAB đã kết nối.
+2025-07-21T03:05:27.817Z | [CONNECT] User C6ALu6l1mhMWnJdLAAAE đã kết nối.
+2025-07-21T03:05:27.824Z | [CONNECT] User o9LmQWhfHjXPmI0uAAAF đã kết nối.
+2025-07-21T03:05:30.099Z | [CONNECT] User uXf-FcrZKTlO9cyyAAAH đã kết nối.
+2025-07-21T03:05:35.813Z | [CONNECT] User s4dse0ePXTPLqtcNAAAJ đã kết nối.
+2025-07-21T03:05:41.984Z | [CONNECT] User LGkdr7dnZBsyqc5OAAAL đã kết nối.
+2025-07-21T03:07:30.037Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T03:07:30.054Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T03:07:31.819Z | [CONNECT] User XlUn1U5C1YGo3V-cAAAB đã kết nối.
+2025-07-21T03:07:32.370Z | [CONNECT] User o0YyQF-Q65UtbYuWAAAD đã kết nối.
+2025-07-21T03:07:32.810Z | [CONNECT] User L5HT6oaUGAMMjSvfAAAF đã kết nối.
+2025-07-21T03:07:38.189Z | [CONNECT] User Uf7M0uyAPwFEhBIoAAAH đã kết nối.
+2025-07-21T03:07:38.863Z | [CONNECT] User _gNsdsREqyXMHWI5AAAJ đã kết nối.
+2025-07-21T03:08:47.502Z | [CONNECT] User pMkkZCAwj92xsIxXAAAL đã kết nối.
+2025-07-21T03:10:48.084Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T03:10:48.102Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T03:10:50.136Z | [CONNECT] User jmWDlx4VSpkOK1s0AAAB đã kết nối.
+2025-07-21T03:10:50.821Z | [CONNECT] User x94YTNcOewkXc7duAAAE đã kết nối.
+2025-07-21T03:10:50.825Z | [CONNECT] User wTYXnNAgXFKuS6oRAAAF đã kết nối.
+2025-07-21T03:10:53.935Z | [CONNECT] User _Pm18lF562eRglcZAAAH đã kết nối.
+2025-07-21T03:10:54.632Z | [CONNECT] User 2fR4sZj6Lpe4-JnUAAAJ đã kết nối.
+2025-07-21T03:10:56.503Z | [JOIN] User a1 (id: 2fR4sZj6Lpe4-JnUAAAJ) đã tham gia.
+2025-07-21T03:10:58.182Z | [JOIN] User a2 (id: _Pm18lF562eRglcZAAAH) đã tham gia.
+2025-07-21T03:10:59.614Z | [JOIN] User a3 (id: jmWDlx4VSpkOK1s0AAAB) đã tham gia.
+2025-07-21T03:11:01.270Z | [JOIN ROOM] User a2 vào phòng 2fR4sZj6Lpe4-JnUAAAJ-_Pm18lF562eRglcZAAAH.
+2025-07-21T03:11:04.085Z | [JOIN ROOM] User a2 vào phòng _Pm18lF562eRglcZAAAH-jmWDlx4VSpkOK1s0AAAB.
+2025-07-21T03:11:06.613Z | [JOIN ROOM] User a1 vào phòng 2fR4sZj6Lpe4-JnUAAAJ-_Pm18lF562eRglcZAAAH.
+2025-07-21T03:11:08.605Z | [JOIN ROOM] User a1 vào phòng 2fR4sZj6Lpe4-JnUAAAJ-jmWDlx4VSpkOK1s0AAAB.
+2025-07-21T03:11:11.525Z | [JOIN ROOM] User a3 vào phòng 2fR4sZj6Lpe4-JnUAAAJ-jmWDlx4VSpkOK1s0AAAB.
+2025-07-21T03:11:13.397Z | [JOIN ROOM] User a3 vào phòng _Pm18lF562eRglcZAAAH-jmWDlx4VSpkOK1s0AAAB.
+2025-07-21T03:11:21.750Z | [GROUP CREATED] User a3 tạo nhóm 'dđ' (Owner: jmWDlx4VSpkOK1s0AAAB)
+2025-07-21T03:11:22.494Z | [JOIN ROOM] User a3 vào phòng group-687dafd9577757efcbbc5a0c.
+2025-07-21T03:11:25.117Z | [JOIN ROOM] User a1 vào phòng group-687dafd9577757efcbbc5a0c.
+2025-07-21T03:11:27.525Z | [JOIN ROOM] User a1 vào phòng group-687dafd9577757efcbbc5a0c.
+2025-07-21T03:11:39.316Z | [GROUP KICK] Owner a3 đã kick a1 khỏi nhóm dđ
+2025-07-21T03:11:56.541Z | [GROUP CREATED] User a3 tạo nhóm 'ưqeqư' (Owner: jmWDlx4VSpkOK1s0AAAB)
+2025-07-21T03:11:57.333Z | [JOIN ROOM] User a3 vào phòng group-687daffc577757efcbbc5a18.
+2025-07-21T03:12:03.045Z | [GROUP KICK] Owner a3 đã kick a1 khỏi nhóm ưqeqư
+2025-07-21T03:12:04.509Z | [GROUP KICK] Owner a3 đã kick a2 khỏi nhóm ưqeqư
+2025-07-21T03:13:51.342Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T03:13:51.361Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T03:13:52.824Z | [CONNECT] User 1j1thfAWH30jTvewAAAB đã kết nối.
+2025-07-21T03:13:53.816Z | [CONNECT] User MQVZC4OQe3v6HFgsAAAE đã kết nối.
+2025-07-21T03:13:53.819Z | [CONNECT] User ycf9S56KLb1M3Tt4AAAF đã kết nối.
+2025-07-21T03:13:59.704Z | [CONNECT] User W2vAJZBzZXpBETPyAAAH đã kết nối.
+2025-07-21T03:14:00.156Z | [CONNECT] User j3BUa_4nYh7SkYZEAAAJ đã kết nối.
+2025-07-21T03:14:00.676Z | [CONNECT] User _POR3LMfn7mahBQWAAAL đã kết nối.
+2025-07-21T03:14:02.046Z | [JOIN] User a1 (id: _POR3LMfn7mahBQWAAAL) đã tham gia.
+2025-07-21T03:14:03.709Z | [JOIN] User a2 (id: W2vAJZBzZXpBETPyAAAH) đã tham gia.
+2025-07-21T03:14:05.126Z | [JOIN] User a3 (id: j3BUa_4nYh7SkYZEAAAJ) đã tham gia.
+2025-07-21T03:14:06.125Z | [JOIN ROOM] User a3 vào phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:07.388Z | [MESSAGE] Từ a3 trong phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ: 123
+2025-07-21T03:14:08.373Z | [JOIN ROOM] User a3 vào phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:09.222Z | [MESSAGE] Từ a3 trong phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ: 123
+2025-07-21T03:14:10.405Z | [JOIN ROOM] User a2 vào phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL.
+2025-07-21T03:14:11.507Z | [MESSAGE] Từ a2 trong phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL: 123
+2025-07-21T03:14:12.542Z | [JOIN ROOM] User a2 vào phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:13.228Z | [MESSAGE] Từ a2 trong phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ: 123
+2025-07-21T03:14:14.829Z | [JOIN ROOM] User a1 vào phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL.
+2025-07-21T03:14:15.533Z | [MESSAGE] Từ a1 trong phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL: 123
+2025-07-21T03:14:16.333Z | [JOIN ROOM] User a1 vào phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:16.835Z | [MESSAGE] Từ a1 trong phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ: 123
+2025-07-21T03:14:18.333Z | [JOIN ROOM] User a1 vào phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL.
+2025-07-21T03:14:18.621Z | [JOIN ROOM] User a1 vào phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:20.373Z | [MESSAGE] Từ a1 trong phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ: 321
+2025-07-21T03:14:21.661Z | [JOIN ROOM] User a1 vào phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL.
+2025-07-21T03:14:22.267Z | [MESSAGE] Từ a1 trong phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL: 321
+2025-07-21T03:14:24.253Z | [JOIN ROOM] User a2 vào phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL.
+2025-07-21T03:14:25.002Z | [MESSAGE] Từ a2 trong phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL: 123
+2025-07-21T03:14:25.909Z | [JOIN ROOM] User a2 vào phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:26.524Z | [MESSAGE] Từ a2 trong phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ: 123
+2025-07-21T03:14:29.205Z | [MESSAGE] Từ a3 trong phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ: 321
+2025-07-21T03:14:30.166Z | [JOIN ROOM] User a3 vào phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:30.739Z | [MESSAGE] Từ a3 trong phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ: 321
+2025-07-21T03:14:32.437Z | [JOIN ROOM] User a1 vào phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:33.317Z | [MESSAGE] Từ a1 trong phòng _POR3LMfn7mahBQWAAAL-j3BUa_4nYh7SkYZEAAAJ: 321
+2025-07-21T03:14:34.253Z | [JOIN ROOM] User a1 vào phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL.
+2025-07-21T03:14:34.662Z | [MESSAGE] Từ a1 trong phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL: 123
+2025-07-21T03:14:38.766Z | [JOIN ROOM] User a2 vào phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL.
+2025-07-21T03:14:39.640Z | [MESSAGE] Từ a2 trong phòng W2vAJZBzZXpBETPyAAAH-_POR3LMfn7mahBQWAAAL: 123
+2025-07-21T03:14:40.637Z | [JOIN ROOM] User a2 vào phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:41.100Z | [MESSAGE] Từ a2 trong phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ: 321
+2025-07-21T03:14:42.125Z | [JOIN ROOM] User a3 vào phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ.
+2025-07-21T03:14:43.739Z | [MESSAGE] Từ a3 trong phòng W2vAJZBzZXpBETPyAAAH-j3BUa_4nYh7SkYZEAAAJ: 321
+2025-07-21T03:14:50.470Z | [GROUP CREATED] User a3 tạo nhóm 'ssas' (ID: group-687db0aa032fa4baa0323046)
+2025-07-21T03:14:51.309Z | [JOIN ROOM] User a3 vào phòng group-687db0aa032fa4baa0323046.
+2025-07-21T03:14:52.296Z | [MESSAGE] Từ a3 trong phòng group-687db0aa032fa4baa0323046: 123
+2025-07-21T03:14:53.534Z | [JOIN ROOM] User a1 vào phòng group-687db0aa032fa4baa0323046.
+2025-07-21T03:14:54.849Z | [MESSAGE] Từ a1 trong phòng group-687db0aa032fa4baa0323046: 321
+2025-07-21T03:14:59.150Z | [GROUP UPDATE] User a1 đã thêm 1 thành viên vào nhóm ssas
+2025-07-21T03:15:00.548Z | [MESSAGE] Từ a1 trong phòng group-687db0aa032fa4baa0323046: 123
+2025-07-21T03:15:02.503Z | [MESSAGE] Từ a3 trong phòng group-687db0aa032fa4baa0323046: 321
+2025-07-21T03:15:03.709Z | [JOIN ROOM] User a2 vào phòng group-687db0aa032fa4baa0323046.
+2025-07-21T03:15:04.805Z | [MESSAGE] Từ a2 trong phòng group-687db0aa032fa4baa0323046: 123
+2025-07-21T03:15:06.239Z | [MESSAGE] Từ a3 trong phòng group-687db0aa032fa4baa0323046: 321
+2025-07-21T10:14:00.409Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T10:14:00.441Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T10:14:04.081Z | [CONNECT] User tcq0iAXdggvDtyq9AAAB đã kết nối.
+2025-07-21T10:14:06.575Z | [JOIN] User a1 (id: tcq0iAXdggvDtyq9AAAB) đã tham gia.
+2025-07-21T10:14:17.073Z | [CONNECT] User pnO0VI5fVhixe3y4AAAD đã kết nối.
+2025-07-21T10:14:19.290Z | [JOIN] User a2 (id: pnO0VI5fVhixe3y4AAAD) đã tham gia.
+2025-07-21T10:14:31.100Z | [CONNECT] User oU1zyhTsJ4JVJnDwAAAF đã kết nối.
+2025-07-21T10:14:34.607Z | [JOIN] User a3 (id: oU1zyhTsJ4JVJnDwAAAF) đã tham gia.
+2025-07-21T10:15:10.574Z | [JOIN ROOM] User a1 vào phòng pnO0VI5fVhixe3y4AAAD-tcq0iAXdggvDtyq9AAAB.
+2025-07-21T10:16:06.357Z | [JOIN ROOM] User a1 vào phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB.
+2025-07-21T10:16:06.357Z | [JOIN ROOM] User a1 vào phòng pnO0VI5fVhixe3y4AAAD-tcq0iAXdggvDtyq9AAAB.
+2025-07-21T10:16:06.360Z | [DISCONNECT] User a1 (tcq0iAXdggvDtyq9AAAB) đã ngắt kết nối.
+2025-07-21T10:16:06.367Z | [JOIN ROOM] User a3 vào phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB.
+2025-07-21T10:16:06.385Z | [JOIN ROOM] User a3 vào phòng oU1zyhTsJ4JVJnDwAAAF-pnO0VI5fVhixe3y4AAAD.
+2025-07-21T10:16:06.386Z | [JOIN ROOM] User a3 vào phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB.
+2025-07-21T10:16:06.386Z | [DISCONNECT] User a3 (oU1zyhTsJ4JVJnDwAAAF) đã ngắt kết nối.
+2025-07-21T10:16:06.407Z | [JOIN ROOM] User a2 vào phòng pnO0VI5fVhixe3y4AAAD-tcq0iAXdggvDtyq9AAAB.
+2025-07-21T10:16:06.407Z | [JOIN ROOM] User a2 vào phòng oU1zyhTsJ4JVJnDwAAAF-pnO0VI5fVhixe3y4AAAD.
+2025-07-21T10:16:06.408Z | [JOIN ROOM] User a2 vào phòng pnO0VI5fVhixe3y4AAAD-tcq0iAXdggvDtyq9AAAB.
+2025-07-21T10:16:06.409Z | [JOIN ROOM] User a2 vào phòng oU1zyhTsJ4JVJnDwAAAF-pnO0VI5fVhixe3y4AAAD.
+2025-07-21T10:16:06.410Z | [DISCONNECT] User a2 (pnO0VI5fVhixe3y4AAAD) đã ngắt kết nối.
+2025-07-21T10:16:06.439Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 123
+2025-07-21T10:16:06.440Z | [CONNECT] User ygWUh8ZVQj1P37FpAAAL đã kết nối.
+2025-07-21T10:16:06.448Z | [CONNECT] User VkKjta4JMI93ZbGwAAAM đã kết nối.
+2025-07-21T10:16:06.454Z | [CONNECT] User 4oN3xL3tjYtAxI6TAAAN đã kết nối.
+2025-07-21T10:16:06.457Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 123
+2025-07-21T10:16:06.466Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 3
+2025-07-21T10:16:06.467Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 213
+2025-07-21T10:16:06.469Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 12
+2025-07-21T10:16:06.472Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 321
+2025-07-21T10:16:06.474Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 312
+2025-07-21T10:16:06.478Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 312
+2025-07-21T10:16:06.481Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 3
+2025-07-21T10:16:06.483Z | [MESSAGE] Từ a3 trong phòng oU1zyhTsJ4JVJnDwAAAF-tcq0iAXdggvDtyq9AAAB: 12312
+2025-07-21T10:16:06.651Z | [CONNECT] User WaNPH2MkxZaOX10wAAAP đã kết nối.
+2025-07-21T10:16:06.690Z | [CONNECT] User QlvzX8cKGchkj0wdAAAR đã kết nối.
+2025-07-21T10:16:06.714Z | [CONNECT] User AxfKI8NoZ-hIYAymAAAT đã kết nối.
+2025-07-21T10:16:12.296Z | [JOIN] User a1 (id: AxfKI8NoZ-hIYAymAAAT) đã tham gia.
+2025-07-21T10:16:16.977Z | [JOIN] User a2 (id: QlvzX8cKGchkj0wdAAAR) đã tham gia.
+2025-07-21T10:16:19.073Z | [JOIN] User a3 (id: WaNPH2MkxZaOX10wAAAP) đã tham gia.
+2025-07-21T10:16:20.600Z | [JOIN ROOM] User a1 vào phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR.
+2025-07-21T10:16:21.953Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR: 123
+2025-07-21T10:16:22.468Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR: 321
+2025-07-21T10:16:22.855Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR: 312
+2025-07-21T10:16:24.016Z | [JOIN ROOM] User a1 vào phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP.
+2025-07-21T10:16:25.150Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 321
+2025-07-21T10:16:25.339Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 3
+2025-07-21T10:16:25.513Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 213
+2025-07-21T10:16:25.680Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 12
+2025-07-21T10:16:26.920Z | [JOIN ROOM] User a2 vào phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR.
+2025-07-21T10:16:28.130Z | [MESSAGE] Từ a2 trong phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR: 12
+2025-07-21T10:16:28.319Z | [MESSAGE] Từ a2 trong phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR: 3
+2025-07-21T10:16:28.504Z | [MESSAGE] Từ a2 trong phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR: 12
+2025-07-21T10:16:28.670Z | [MESSAGE] Từ a2 trong phòng AxfKI8NoZ-hIYAymAAAT-QlvzX8cKGchkj0wdAAAR: 312
+2025-07-21T10:16:30.000Z | [JOIN ROOM] User a2 vào phòng QlvzX8cKGchkj0wdAAAR-WaNPH2MkxZaOX10wAAAP.
+2025-07-21T10:16:31.246Z | [MESSAGE] Từ a2 trong phòng QlvzX8cKGchkj0wdAAAR-WaNPH2MkxZaOX10wAAAP: 312
+2025-07-21T10:16:31.398Z | [MESSAGE] Từ a2 trong phòng QlvzX8cKGchkj0wdAAAR-WaNPH2MkxZaOX10wAAAP: 3
+2025-07-21T10:16:31.551Z | [MESSAGE] Từ a2 trong phòng QlvzX8cKGchkj0wdAAAR-WaNPH2MkxZaOX10wAAAP: 12
+2025-07-21T10:16:31.720Z | [MESSAGE] Từ a2 trong phòng QlvzX8cKGchkj0wdAAAR-WaNPH2MkxZaOX10wAAAP: 312
+2025-07-21T10:16:33.064Z | [JOIN ROOM] User a3 vào phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP.
+2025-07-21T10:16:33.938Z | [MESSAGE] Từ a3 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 3
+2025-07-21T10:16:34.090Z | [MESSAGE] Từ a3 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 21
+2025-07-21T10:16:34.261Z | [MESSAGE] Từ a3 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 312
+2025-07-21T10:16:35.573Z | [MESSAGE] Từ a3 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 321
+2025-07-21T10:16:37.568Z | [JOIN ROOM] User a3 vào phòng QlvzX8cKGchkj0wdAAAR-WaNPH2MkxZaOX10wAAAP.
+2025-07-21T10:16:38.366Z | [MESSAGE] Từ a3 trong phòng QlvzX8cKGchkj0wdAAAR-WaNPH2MkxZaOX10wAAAP: 312
+2025-07-21T10:16:40.965Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 3
+2025-07-21T10:16:42.857Z | [MESSAGE] Từ a1 trong phòng AxfKI8NoZ-hIYAymAAAT-WaNPH2MkxZaOX10wAAAP: 21
+2025-07-21T10:16:51.705Z | [GROUP CREATED] User a2 tạo nhóm 'vipp22' (ID: group-687e1393b5863020a8293db9)
+2025-07-21T10:16:52.632Z | [JOIN ROOM] User a2 vào phòng group-687e1393b5863020a8293db9.
+2025-07-21T10:16:53.442Z | [MESSAGE] Từ a2 trong phòng group-687e1393b5863020a8293db9: 312
+2025-07-21T10:16:54.048Z | [MESSAGE] Từ a2 trong phòng group-687e1393b5863020a8293db9: 321
+2025-07-21T10:16:55.344Z | [JOIN ROOM] User a3 vào phòng group-687e1393b5863020a8293db9.
+2025-07-21T10:16:56.931Z | [MESSAGE] Từ a3 trong phòng group-687e1393b5863020a8293db9: 12
+2025-07-21T10:16:58.448Z | [JOIN ROOM] User a1 vào phòng group-687e1393b5863020a8293db9.
+2025-07-21T10:17:00.220Z | [MESSAGE] Từ a1 trong phòng group-687e1393b5863020a8293db9: 3\
+2025-07-21T10:18:00.637Z | [DISCONNECT] User a1 (AxfKI8NoZ-hIYAymAAAT) đã ngắt kết nối.
+2025-07-21T10:18:02.524Z | [DISCONNECT] User a3 (WaNPH2MkxZaOX10wAAAP) đã ngắt kết nối.
+2025-07-21T10:18:05.553Z | [DISCONNECT] User a2 (QlvzX8cKGchkj0wdAAAR) đã ngắt kết nối.
+2025-07-21T10:18:05.553Z | [GROUP DELETE] Nhóm group-687e1393b5863020a8293db9 đã bị xóa vì không còn thành viên.
+2025-07-21T10:18:43.641Z | [SERVER] Máy chủ đang chạy tại http://localhost:3000
+2025-07-21T10:18:43.658Z | [DATABASE] Đã kết nối thành công tới MongoDB!
+2025-07-21T10:19:02.405Z | [CONNECT] User Xk2qY_ArlB4ihx1TAAAB đã kết nối.
+2025-07-21T10:19:07.831Z | [JOIN] User s2 (id: Xk2qY_ArlB4ihx1TAAAB) đã tham gia.
+2025-07-21T10:19:12.819Z | [CONNECT] User -Ntqmu7gLoc8pF-fAAAD đã kết nối.
+2025-07-21T10:19:14.986Z | [JOIN] User d34 (id: -Ntqmu7gLoc8pF-fAAAD) đã tham gia.
+2025-07-21T10:19:31.042Z | [JOIN ROOM] User d34 vào phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB.
+2025-07-21T10:19:32.877Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 123
+2025-07-21T10:19:33.919Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 213
+2025-07-21T10:19:34.072Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 21
+2025-07-21T10:19:34.223Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 3
+2025-07-21T10:19:34.399Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 213
+2025-07-21T10:19:34.539Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 21
+2025-07-21T10:19:34.710Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 32
+2025-07-21T10:19:34.848Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 13
+2025-07-21T10:19:35.011Z | [MESSAGE] Từ d34 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 21
+2025-07-21T10:19:36.977Z | [JOIN ROOM] User s2 vào phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB.
+2025-07-21T10:19:37.993Z | [MESSAGE] Từ s2 trong phòng -Ntqmu7gLoc8pF-fAAAD-Xk2qY_ArlB4ihx1TAAAB: 321
+2025-07-21T10:19:46.401Z | [GROUP CREATED] User d34 tạo nhóm 'vip an lư' (ID: group-687e1442fbbe7bed33361a54)
+2025-07-21T10:19:47.393Z | [JOIN ROOM] User s2 vào phòng group-687e1442fbbe7bed33361a54.
+2025-07-21T10:19:52.196Z | [MESSAGE] Từ s2 trong phòng group-687e1442fbbe7bed33361a54: hú
+2025-07-21T10:19:53.713Z | [JOIN ROOM] User d34 vào phòng group-687e1442fbbe7bed33361a54.
+2025-07-21T10:19:55.374Z | [MESSAGE] Từ d34 trong phòng group-687e1442fbbe7bed33361a54: nghe

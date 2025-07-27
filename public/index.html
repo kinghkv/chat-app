@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root { --border-color: #eee; --primary-color: #007bff; }
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; display: flex; height: 100vh; font-size: 15px; background: #f4f4f4; }
+        #app-container { display: flex; flex-grow: 1; height: 100%; }
+        #sidebar { width: 260px; border-right: 1px solid var(--border-color); display: flex; flex-direction: column; background: #fdfdfd; }
+        #main-chat { flex-grow: 1; display: flex; flex-direction: column; background: #fff; }
+        .sidebar-header { padding: 1rem; border-bottom: 1px solid var(--border-color); font-weight: bold; color: #555; display: flex; justify-content: space-between; align-items: center;}
+        .action-btn { background: none; border: 1px solid #ccc; border-radius: 50%; width: 24px; height: 24px; cursor: pointer; font-size: 16px; line-height: 22px; color: #555; }
+        .action-btn:hover { background: #f0f0f0; }
+        #group-list, #user-list { list-style-type: none; padding: 0; margin: 0; overflow-y: auto; }
+        #group-list { flex-shrink: 0; }
+        #user-list { flex-grow: 1; }
+        #group-list li, #user-list li { padding: 0.75rem 1rem; cursor: pointer; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between; }
+        #group-list li:hover, #user-list li:hover, #group-list li.active, #user-list li.active { background: #f0f0f0; }
+        .room-name, .user-name { display: flex; align-items: center; font-weight: normal; }
+        .unread-count { background: var(--primary-color); color: white; font-size: 0.75em; padding: 2px 6px; border-radius: 10px; font-weight: bold; }
+        #chat-header { padding: 1rem; border-bottom: 1px solid var(--border-color); font-weight: bold; background: #f7f7f7; display: flex; justify-content: space-between; align-items: center; }
+        #messages-container { flex-grow: 1; overflow-y: auto; padding: 1rem; }
+        #messages li { padding: 0.25rem 0; }
+        .message-wrapper { display: flex; }
+        .message-wrapper.own-message { justify-content: flex-end; }
+        .message-wrapper.other-message { justify-content: flex-start; }
+        .message-wrapper.notification { display: block; text-align: center; font-style: italic; color: #888; }
+        .message-content { max-width: 70%; padding: 0.5rem 1rem; border-radius: 18px; position: relative; word-wrap: break-word; }
+        .message-content .user { font-size: 0.8em; font-weight: bold; color: #555; margin-bottom: 4px; }
+        .other-message .message-content .user { color: var(--primary-color); }
+        .own-message .message-content { background: var(--primary-color); color: white; }
+        .other-message .message-content { background: #e9e9eb; }
+        .message-status { position: relative; display: inline-block; cursor: pointer; font-size: 0.7em; text-align: right; margin-top: 4px; color: #aaa; }
+        .own-message .message-status { color: #bee3ff; }
+        .status-tooltip { visibility: hidden; width: 220px; background-color: #555; color: #fff; text-align: left; border-radius: 6px; padding: 8px; position: absolute; z-index: 1; bottom: 125%; right: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.8em; pointer-events: none; }
+        .status-tooltip::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #555 transparent transparent transparent; }
+        .message-status:hover .status-tooltip { visibility: visible; opacity: 1; }
+        #typing-indicator { height: 20px; padding: 0 1rem; font-style: italic; color: #888; }
+        #form-container { padding: 1rem; border-top: 1px solid var(--border-color); background: #f7f7f7;}
+        #form { display: flex; align-items: center; }
+        #input { flex-grow: 1; border: 1px solid #ccc; border-radius: 20px; padding: 0.75rem; resize: none; box-sizing: border-box; }
+        #form button { background: none; border: none; padding: 0 1rem; cursor: pointer; font-size: 1.5rem; color: var(--primary-color); }
+        #username-overlay, .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: flex; justify-content: center; align-items: center; z-index: 100; }
+        .modal-box { background: white; padding: 2rem; border-radius: 5px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 90%; max-width: 400px; }
+        .modal-box input[type="text"] { padding: 0.5rem; margin-top: 1rem; margin-bottom: 1rem; width: 80%; border: 1px solid #ccc; border-radius: 3px;}
+        .modal-box button { padding: 0.5rem 1rem; background: var(--primary-color); color: white; border: none; border-radius: 3px; cursor: pointer; margin-top: 1rem;}
+        .modal-box button.cancel-btn { background: #6c757d; margin-left: 0.5rem; }
+        .members-list { list-style: none; padding: 0; margin-top: 1rem; max-height: 150px; overflow-y: auto; text-align: left; border: 1px solid #ccc; border-radius: 3px;}
+        .members-list li { padding: 0.5rem; border-bottom: 1px solid #eee;}
+        .chat-disabled { pointer-events: none; opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <div id="username-overlay" class="modal-overlay">
+        <div id="username-box" class="modal-box">
+            <h2>Tham gia Chat</h2>
+            <form id="username-form">
+                <input id="username-input" type="text" autocomplete="off" autofocus placeholder="Nhập tên của bạn..."/>
+                <button type="submit">Vào Chat</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="create-group-overlay" class="modal-overlay" style="display: none;">
+        <div id="create-group-box" class="modal-box">
+            <h2>Tạo phòng chat nhóm mới</h2>
+            <form id="create-group-form">
+                <input id="group-name-input" type="text" autocomplete="off" placeholder="Nhập tên nhóm..." required />
+                <p>Chọn thành viên:</p>
+                <ul id="group-members-list" class="members-list"></ul>
+                <button type="submit">Tạo Nhóm</button>
+                <button type="button" class="cancel-btn">Hủy</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="add-member-overlay" class="modal-overlay" style="display: none;">
+        <div id="add-member-box" class="modal-box">
+            <h2>Thêm thành viên vào nhóm</h2>
+            <form id="add-member-form">
+                <p>Chọn người dùng để thêm vào nhóm:</p>
+                <ul id="add-member-list" class="members-list"></ul>
+                <button type="submit">Thêm</button>
+                <button type="button" class="cancel-btn">Hủy</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="app-container" class="chat-disabled">
+        <aside id="sidebar">
+            <div class="sidebar-header">Nhóm</div>
+            <ul id="group-list"></ul>
+            <div class="sidebar-header">
+                <span>Đang Online (<span id="online-count">0</span>)</span>
+                <button id="create-group-btn" class="action-btn" title="Tạo nhóm mới">+</button>
+            </div>
+            <ul id="user-list"></ul>
+        </aside>
+        <main id="main-chat">
+            <header id="chat-header">
+                <span id="chat-title">Chọn một cuộc trò chuyện</span>
+                <button id="add-member-btn" class="action-btn" title="Thêm thành viên" style="display: none;">+</button>
+            </header>
+            <div id="messages-container"><ul id="messages"></ul></div>
+            <div id="typing-indicator"></div>
+            <div id="form-container" style="display: none;">
+                <form id="form" action=""><input id="input" autocomplete="off" placeholder="Nhập tin nhắn..." /><button type="submit">➤</button></form>
+            </div>
+        </main>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        // DOM Elements
+        const appContainer = document.getElementById('app-container');
+        const usernameOverlay = document.getElementById('username-overlay');
+        const usernameForm = document.getElementById('username-form');
+        const usernameInput = document.getElementById('username-input');
+        const userList = document.getElementById('user-list');
+        const groupList = document.getElementById('group-list');
+        const onlineCount = document.getElementById('online-count');
+        const chatHeader = document.getElementById('chat-header');
+        const chatTitle = document.getElementById('chat-title');
+        const messages = document.getElementById('messages');
+        const formContainer = document.getElementById('form-container');
+        const form = document.getElementById('form');
+        const input = document.getElementById('input');
+        const typingIndicator = document.getElementById('typing-indicator');
+        const createGroupOverlay = document.getElementById('create-group-overlay');
+        const createGroupBtn = document.getElementById('create-group-btn');
+        const createGroupForm = document.getElementById('create-group-form');
+        const groupNameInput = document.getElementById('group-name-input');
+        const groupMembersList = document.getElementById('group-members-list');
+        const addMemberOverlay = document.getElementById('add-member-overlay');
+        const addMemberBtn = document.getElementById('add-member-btn');
+        const addMemberForm = document.getElementById('add-member-form');
+        const addMemberList = document.getElementById('add-member-list');
+
+        // State
+        let username = '';
+        let currentRoom = null;
+        let typingTimeout;
+        let unreadCounts = {};
+        let typingUsers = {};
+        let onlineUsers = {};
+        let groupsData = {};
+
+        // --- UTILITY FUNCTIONS ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const messageId = entry.target.dataset.id;
+                    if (entry.target.dataset.user !== username) socket.emit('message seen', messageId);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.9 });
+        
+        function showNotification(title, options) {
+            if (Notification.permission === 'granted' && !document.hasFocus()) new Notification(title, options);
+        }
+
+        function updateTypingIndicator() {
+            const users = Object.keys(typingUsers);
+            typingIndicator.textContent = users.length > 0 ? `${users.join(', ')} đang gõ...` : '';
+        }
+
+        function updateRoomListUI() {
+            document.querySelectorAll('#group-list li[data-room], #user-list li[data-room]').forEach(li => {
+                const room = li.dataset.room;
+                if (!room) return;
+                let unreadBadge = li.querySelector('.unread-count');
+                if (unreadCounts[room] > 0 && currentRoom !== room) {
+                    if (!unreadBadge) {
+                        unreadBadge = document.createElement('span');
+                        unreadBadge.className = 'unread-count';
+                        li.appendChild(unreadBadge);
+                    }
+                    unreadBadge.textContent = unreadCounts[room];
+                } else {
+                    if (unreadBadge) unreadBadge.remove();
+                }
+            });
+        }
+        
+        function addMessage(data) {
+            const item = document.createElement('li');
+            item.dataset.id = data._id;
+            item.dataset.user = data.user;
+            item.className = 'message-wrapper';
+            if (data.type === 'notification') {
+                item.classList.add('notification');
+                item.textContent = data.content;
+            } else {
+                const userHTML = `<div class="user">${data.user}</div>`;
+                const contentHTML = data.type === 'image' ? `${userHTML}<img src="${data.content}" alt="Ảnh" />` : `${userHTML}${data.content}`;
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message-content';
+                messageDiv.innerHTML = contentHTML;
+                item.classList.add(data.user === username ? 'own-message' : 'other-message');
+                if (data.user === username && data.status) {
+                    const statusDiv = document.createElement('div');
+                    statusDiv.className = 'message-status';
+                    statusDiv.innerHTML = '✔<div class="status-tooltip"></div>';
+                    messageDiv.appendChild(statusDiv);
+                    updateStatus(statusDiv, data.status);
+                }
+                item.appendChild(messageDiv);
+            }
+            messages.appendChild(item);
+            messages.parentElement.scrollTop = messages.parentElement.scrollHeight;
+            if (data.user !== username && data.type !== 'notification') {
+                observer.observe(item);
+            }
+        }
+        
+        function updateStatus(statusDiv, statusData) {
+            if (!statusDiv || !statusData) return;
+            const deliveredTo = statusData.deliveredTo || [];
+            const seenBy = statusData.seenBy || [];
+            const sentAt = statusData.sentAt ? new Date(statusData.sentAt).toLocaleString() : 'Không rõ';
+
+            let statusIcon = '✔'; // Sent
+            statusDiv.style.color = '#bee3ff'; // Default sent color
+            if (deliveredTo.length > 0) {
+                 statusIcon = '✔✔'; // Delivered
+                 statusDiv.style.color = '#aaa';
+            }
+            if (seenBy.some(s => s.user !== username)) {
+                statusIcon = '✔✔';
+                statusDiv.style.color = '#4fc3f7'; // Seen
+            }
+            
+            const tooltip = statusDiv.querySelector('.status-tooltip');
+            if (!tooltip) return;
+
+            let tooltipHTML = `<b>Gửi lúc:</b> ${sentAt}<br>`;
+            if (deliveredTo.length > 0) {
+                tooltipHTML += '<b>Đã nhận bởi:</b><br>';
+                deliveredTo.forEach(d => {
+                    tooltipHTML += `&nbsp;- ${d.user || '...'} lúc ${d.at ? new Date(d.at).toLocaleString() : ''}<br>`;
+                });
+            }
+            const otherSeers = seenBy.filter(s => s.user !== username);
+            if (otherSeers.length > 0) {
+                tooltipHTML += '<b>Đã xem bởi:</b><br>';
+                otherSeers.forEach(s => {
+                    tooltipHTML += `&nbsp;- ${s.user || '...'} lúc ${s.at ? new Date(s.at).toLocaleString() : ''}<br>`;
+                });
+            }
+            tooltip.innerHTML = tooltipHTML;
+            statusDiv.firstChild.textContent = statusIcon;
+        }
+
+        function switchRoom(roomName, headerText, roomElement) {
+            if (roomName === currentRoom) return;
+            document.querySelector('#group-list li.active, #user-list li.active')?.classList.remove('active');
+            currentRoom = roomName;
+            chatTitle.textContent = headerText;
+            messages.innerHTML = '';
+            socket.emit('join room', roomName);
+            if (roomElement) {
+                unreadCounts[roomName] = 0;
+                roomElement.classList.add('active');
+            }
+            formContainer.style.display = 'block';
+            input.focus();
+            
+            addMemberBtn.style.display = roomName.startsWith('group-') ? 'block' : 'none';
+
+            updateRoomListUI();
+            document.title = 'Chat App';
+            typingUsers = {};
+            updateTypingIndicator();
+        }
+        
+        // --- MAIN LOGIC & EVENT LISTENERS ---
+        usernameForm.addEventListener('submit', (e) => { e.preventDefault(); if (usernameInput.value) { username = usernameInput.value.trim(); socket.emit('join', username); usernameOverlay.style.display = 'none'; appContainer.classList.remove('chat-disabled'); }});
+        form.addEventListener('submit', (e) => { e.preventDefault(); if (input.value && currentRoom) { socket.emit('chat message', { room: currentRoom, content: input.value, type: 'text' }); input.value = ''; } });
+        
+        document.querySelectorAll('.cancel-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.closest('.modal-overlay').style.display = 'none';
+            });
+        });
+
+        createGroupBtn.addEventListener('click', () => {
+            groupMembersList.innerHTML = '';
+            for (const id in onlineUsers) {
+                if (id !== socket.id) {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<label><input type="checkbox" name="members" value="${id}"> ${onlineUsers[id].username}</label>`;
+                    groupMembersList.appendChild(li);
+                }
+            }
+            createGroupOverlay.style.display = 'flex';
+            groupNameInput.focus();
+        });
+
+        createGroupForm.addEventListener('submit', (e) => { e.preventDefault(); const groupName = groupNameInput.value.trim(); const memberIds = Array.from(createGroupForm.querySelectorAll('input:checked')).map(input => input.value); if (groupName && memberIds.length > 0) { socket.emit('create group', { groupName, memberIds }); createGroupForm.reset(); createGroupOverlay.style.display = 'none'; } });
+
+        addMemberBtn.addEventListener('click', () => {
+            if (!currentRoom || !groupsData[currentRoom]) return;
+            const currentMembers = groupsData[currentRoom].members.map(m => m.id);
+            addMemberList.innerHTML = '';
+            for (const id in onlineUsers) {
+                if (id !== socket.id && !currentMembers.includes(id)) {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<label><input type="checkbox" name="new_members" value="${id}"> ${onlineUsers[id].username}</label>`;
+                    addMemberList.appendChild(li);
+                }
+            }
+            addMemberOverlay.style.display = 'flex';
+        });
+
+        addMemberForm.addEventListener('submit', (e) => { e.preventDefault(); const newMemberIds = Array.from(addMemberForm.querySelectorAll('input:checked')).map(input => input.value); if (newMemberIds.length > 0) { socket.emit('add members', { roomId: currentRoom, newMemberIds }); addMemberForm.reset(); addMemberOverlay.style.display = 'none'; } });
+
+        // --- SOCKET.IO EVENT HANDLERS ---
+        socket.on('update online users', (users) => {
+            onlineUsers = users;
+            const onlineUserCount = Object.keys(users).length;
+            onlineCount.textContent = onlineUserCount > 1 ? onlineUserCount - 1 : 0;
+
+            userList.querySelectorAll('li').forEach(li => { if (!users[li.dataset.id]) li.remove(); });
+
+            for (const id in users) {
+                if (id !== socket.id && !userList.querySelector(`li[data-id="${id}"]`)) {
+                    const item = document.createElement('li');
+                    item.innerHTML = `<span class="user-name">${users[id].username}</span>`;
+                    item.dataset.id = id;
+                    // SỬA LỖI: Gán data-room ngay khi người dùng được click lần đầu.
+                    item.onclick = () => {
+                        const roomName = [socket.id, id].sort().join('-');
+                        if (!item.dataset.room) {
+                            item.dataset.room = roomName;
+                        }
+                        switchRoom(roomName, `Chat với ${users[id].username}`, item);
+                    };
+                    userList.appendChild(item);
+                }
+            }
+        });
+
+        socket.on('group update', ({ roomId, groupName, members }) => {
+            groupsData[roomId] = { name: groupName, members: members };
+            let groupLi = groupList.querySelector(`li[data-room='${roomId}']`);
+            if (!groupLi) {
+                groupLi = document.createElement('li');
+                groupLi.dataset.room = roomId;
+                groupLi.onclick = () => switchRoom(roomId, `Nhóm: ${groupName}`, groupLi);
+                groupList.appendChild(groupLi);
+            }
+            groupLi.innerHTML = `<span class="room-name"># ${groupName}</span>`;
+            groupLi.title = `Thành viên: ${members.map(m => m.username).join(', ')}`;
+        });
+        
+        socket.on('chat message', (data) => {
+            if (data.room === currentRoom) {
+                addMessage(data);
+                if (data.user !== username) {
+                    socket.emit('message delivered', { messageId: data._id, username: username });
+                    if (!document.hidden) socket.emit('message seen', data._id);
+                }
+            } else {
+                if (data.user !== username) {
+                    unreadCounts[data.room] = (unreadCounts[data.room] || 0) + 1;
+                    updateRoomListUI();
+                    showNotification(`Tin nhắn mới từ ${data.user}`, { body: data.content, icon: '/favicon.ico' });
+                }
+            }
+            if (data.user !== username) { try { new Audio('/notification.mp3').play(); } catch(e) {} }
+        });
+        
+        socket.on('load old messages', (msgs) => msgs.forEach(addMessage));
+        socket.on('message status update', ({ messageId, status }) => { const msgElement = document.querySelector(`.message-wrapper[data-id="${messageId}"] .message-status`); if (msgElement) updateStatus(msgElement, status); });
+        socket.on('typing', (data) => { if(data.room === currentRoom) { typingUsers[data.user] = true; updateTypingIndicator(); } });
+        socket.on('stop typing', (data) => { if(data.room === currentRoom) { delete typingUsers[data.user]; updateTypingIndicator(); } });
+    </script>
+</body>
+</html>
