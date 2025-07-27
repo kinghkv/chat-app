@@ -19,7 +19,7 @@ const messageSchema = new mongoose.Schema({
     room: {
         type: String,
         required: true,
-        default: 'general'
+        default: 'an lư vip'
     },
     username: {
         type: String,
@@ -33,6 +33,10 @@ const messageSchema = new mongoose.Schema({
         trim: true,
         maxlength: 1000
     },
+    avatar: {
+        type: String,
+        default: '😊'
+    },
     timestamp: {
         type: Date,
         default: Date.now
@@ -40,7 +44,24 @@ const messageSchema = new mongoose.Schema({
     socketId: {
         type: String,
         required: true
-    }
+    },
+    messageId: {
+        type: String,
+        required: true
+    },
+    status: {
+        type: String,
+        enum: ['sent', 'delivered', 'read'],
+        default: 'sent'
+    },
+    deliveredTo: [{
+        userId: String,
+        timestamp: { type: Date, default: Date.now }
+    }],
+    readBy: [{
+        userId: String,
+        timestamp: { type: Date, default: Date.now }
+    }]
 }, {
     timestamps: true
 });
@@ -60,7 +81,11 @@ const userSchema = new mongoose.Schema({
     },
     room: {
         type: String,
-        default: 'general'
+        default: 'an lư vip'
+    },
+    avatar: {
+        type: String,
+        default: '😊'
     },
     joinedAt: {
         type: Date,
@@ -73,6 +98,10 @@ const userSchema = new mongoose.Schema({
     isOnline: {
         type: Boolean,
         default: true
+    },
+    lastSeen: {
+        type: Date,
+        default: Date.now
     }
 }, {
     timestamps: true
@@ -87,6 +116,7 @@ async function connectMongoDB() {
     try {
         let mongoUri = process.env.DB_URI || process.env.MONGODB_URI || 'mongodb://localhost:27017/chatapp';
         
+        // Ensure database name is included
         if (mongoUri.includes('mongodb+srv://') && !mongoUri.includes('/chatapp')) {
             mongoUri = mongoUri.replace('/?', '/chatapp?');
         }
@@ -117,7 +147,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Cấu hình Content Security Policy
+// Content Security Policy
 app.use((req, res, next) => {
     res.setHeader('Content-Security-Policy', 
         "default-src 'self'; " +
@@ -131,7 +161,7 @@ app.use((req, res, next) => {
     next();
 });
 
-// Phục vụ file static
+// Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
@@ -191,7 +221,7 @@ app.get('/api/users/:room', async (req, res) => {
         const { room } = req.params;
         
         const users = await User.find({ room, isOnline: true })
-            .select('username joinedAt')
+            .select('username joinedAt avatar')
             .sort({ joinedAt: -1 })
             .lean();
             
@@ -215,7 +245,7 @@ app.use((req, res) => {
     res.status(404).json({ error: 'Trang không tồn tại' });
 });
 
-// In-memory storage
+// In-memory storage backup
 const memoryStorage = {
     users: new Map(),
     messages: []
@@ -227,7 +257,7 @@ io.on('connection', (socket) => {
     
     socket.on('register-user', async (data) => {
         try {
-            const { username, room = 'general' } = data;
+            const { username, room = 'an lư vip', avatar = '😊' } = data;
             
             if (!username || username.trim().length < 2) {
                 socket.emit('registration-error', 'Tên người dùng phải có ít nhất 2 ký tự');
@@ -251,7 +281,8 @@ io.on('connection', (socket) => {
                 const user = new User({
                     username: trimmedUsername,
                     socketId: socket.id,
-                    room
+                    room,
+                    avatar
                 });
                 
                 await user.save();
@@ -269,6 +300,7 @@ io.on('connection', (socket) => {
                     username: trimmedUsername,
                     socketId: socket.id,
                     room,
+                    avatar,
                     joinedAt: new Date(),
                     isOnline: true
                 });
@@ -279,13 +311,15 @@ io.on('connection', (socket) => {
             
             socket.emit('registration-success', {
                 username: trimmedUsername,
-                room: room
+                room: room,
+                avatar: avatar
             });
             
             socket.broadcast.to(room).emit('user-joined', {
                 username: trimmedUsername,
                 message: `${trimmedUsername} đã tham gia phòng chat`,
-                timestamp: new Date()
+                timestamp: new Date(),
+                avatar: avatar
             });
             
             await updateUsersList(room);
@@ -313,19 +347,22 @@ io.on('connection', (socket) => {
                 return;
             }
             
-            const { message, room = user.room } = data;
+            const { message, room = user.room, messageId, avatar = user.avatar } = data;
             
             if (!message || message.trim().length === 0) {
                 return;
             }
             
             const messageData = {
-                id: Date.now() + Math.random(),
+                id: messageId || (Date.now() + Math.random()),
+                messageId: messageId || (Date.now() + Math.random().toString(36).substr(2, 9)),
                 username: user.username,
                 message: message.trim(),
                 timestamp: new Date(),
                 room: room,
-                socketId: socket.id
+                socketId: socket.id,
+                avatar: avatar,
+                status: 'sent'
             };
             
             if (mongoose.connection.readyState === 1) {
@@ -354,6 +391,56 @@ io.on('connection', (socket) => {
         }
     });
     
+    socket.on('message-delivered', async (data) => {
+        try {
+            const { messageId } = data;
+            
+            if (mongoose.connection.readyState === 1) {
+                await Message.updateOne(
+                    { messageId: messageId },
+                    { 
+                        status: 'delivered',
+                        $push: { deliveredTo: { userId: socket.id, timestamp: new Date() } }
+                    }
+                );
+            }
+            
+            // Notify sender
+            const message = await Message.findOne({ messageId: messageId });
+            if (message) {
+                io.to(message.socketId).emit('message-delivered', { messageId: messageId });
+            }
+            
+        } catch (error) {
+            console.error('[SOCKET] Lỗi cập nhật trạng thái delivered:', error);
+        }
+    });
+    
+    socket.on('message-read', async (data) => {
+        try {
+            const { messageId } = data;
+            
+            if (mongoose.connection.readyState === 1) {
+                await Message.updateOne(
+                    { messageId: messageId },
+                    { 
+                        status: 'read',
+                        $push: { readBy: { userId: socket.id, timestamp: new Date() } }
+                    }
+                );
+            }
+            
+            // Notify sender
+            const message = await Message.findOne({ messageId: messageId });
+            if (message) {
+                io.to(message.socketId).emit('message-read', { messageId: messageId });
+            }
+            
+        } catch (error) {
+            console.error('[SOCKET] Lỗi cập nhật trạng thái read:', error);
+        }
+    });
+    
     socket.on('disconnect', async () => {
         try {
             let user;
@@ -363,7 +450,11 @@ io.on('connection', (socket) => {
                 if (user) {
                     await User.updateOne(
                         { socketId: socket.id },
-                        { isOnline: false, lastActive: new Date() }
+                        { 
+                            isOnline: false, 
+                            lastActive: new Date(),
+                            lastSeen: new Date()
+                        }
                     );
                 }
             } else {
@@ -377,7 +468,8 @@ io.on('connection', (socket) => {
                 socket.broadcast.to(user.room).emit('user-left', {
                     username: user.username,
                     message: `${user.username} đã rời khỏi phòng chat`,
-                    timestamp: new Date()
+                    timestamp: new Date(),
+                    avatar: user.avatar
                 });
                 
                 await updateUsersList(user.room);
@@ -404,6 +496,7 @@ io.on('connection', (socket) => {
             if (user) {
                 socket.broadcast.to(user.room).emit('user-typing', {
                     username: user.username,
+                    avatar: data.avatar || user.avatar,
                     isTyping: data.isTyping
                 });
             }
@@ -422,11 +515,11 @@ async function updateUsersList(room) {
             onlineUsers = await User.find({ 
                 room: room, 
                 isOnline: true 
-            }).select('username joinedAt').sort({ joinedAt: -1 });
+            }).select('username joinedAt avatar').sort({ joinedAt: -1 });
         } else {
             onlineUsers = Array.from(memoryStorage.users.values())
                 .filter(u => u.room === room && u.isOnline)
-                .map(u => ({ username: u.username, joinedAt: u.joinedAt }))
+                .map(u => ({ username: u.username, joinedAt: u.joinedAt, avatar: u.avatar }))
                 .sort((a, b) => b.joinedAt - a.joinedAt);
         }
         
@@ -436,7 +529,7 @@ async function updateUsersList(room) {
     }
 }
 
-// Khởi động server
+// Start server
 async function startServer() {
     const PORT = process.env.PORT || 10000;
     
@@ -448,14 +541,14 @@ async function startServer() {
     });
 }
 
-// Cleanup offline users
+// Cleanup offline users periodically
 setInterval(async () => {
     if (mongoose.connection.readyState === 1) {
         try {
             const fiveMinutesAgo = new Date(Date.now() - 5 * 60 * 1000);
             await User.updateMany(
                 { lastActive: { $lt: fiveMinutesAgo }, isOnline: true },
-                { isOnline: false }
+                { isOnline: false, lastSeen: new Date() }
             );
         } catch (error) {
             console.error('[CLEANUP] Lỗi cleanup users:', error);
@@ -473,5 +566,5 @@ process.on('uncaughtException', (error) => {
     process.exit(1);
 });
 
-// Khởi động server
+// Start server
 startServer();
