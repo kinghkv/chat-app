@@ -349,3 +349,482 @@
             background: #fee2e2;
             color: #991b1b;
         }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .app-container {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+            }
+            
+            .sidebar {
+                width: 250px;
+            }
+            
+            .login-form {
+                margin: 20px;
+                width: calc(100% - 40px);
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Modal -->
+    <div id="loginModal" class="login-modal">
+        <div class="login-form">
+            <h2>Chào mừng!</h2>
+            <p class="room-name">An Lư Vip Chat Room</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="usernameInput">Tên hiển thị:</label>
+                    <input type="text" id="usernameInput" placeholder="Nhập tên của bạn..." maxlength="50" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomInput">Phòng chat:</label>
+                    <input type="text" id="roomInput" value="general" maxlength="30" required>
+                </div>
+                <button type="submit" class="login-button" id="loginButton">Tham gia Chat</button>
+                <div class="loading" id="loginLoading">
+                    Đang kết nối...
+                </div>
+                <div class="error-message" id="loginError"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Chat App -->
+    <div id="chatApp" class="app-container hidden">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>An Lư Vip</h2>
+                <p>Chat Room</p>
+            </div>
+            
+            <div class="user-info">
+                <h3 id="currentUsername">Người dùng</h3>
+                <span id="currentRoom">Phòng: general</span>
+            </div>
+            
+            <div class="online-users">
+                <h4>
+                    <span class="user-status"></span>
+                    Đang online (<span id="userCount">0</span>)
+                </h4>
+                <div id="usersList"></div>
+            </div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <span>Phòng chat: <span id="roomName">general</span></span>
+                <span class="message-count">Tin nhắn: <span id="messageCount">0</span></span>
+            </div>
+            
+            <div id="connectionStatus" class="status">
+                Đang kết nối...
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="system-message">
+                    Chào mừng bạn đến với An Lư Vip Chat Room!
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Nhập tin nhắn..." maxlength="1000" disabled>
+                <button id="sendButton" disabled>Gửi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Socket.IO Library -->
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script>
+        class ChatApp {
+            constructor() {
+                this.socket = null;
+                this.username = '';
+                this.room = 'general';
+                this.messageCount = 0;
+                this.isConnected = false;
+                this.typingTimeout = null;
+                
+                this.initElements();
+                this.initEventListeners();
+                this.initSocket();
+            }
+            
+            initElements() {
+                // Login elements
+                this.loginModal = document.getElementById('loginModal');
+                this.loginForm = document.getElementById('loginForm');
+                this.usernameInput = document.getElementById('usernameInput');
+                this.roomInput = document.getElementById('roomInput');
+                this.loginButton = document.getElementById('loginButton');
+                this.loginLoading = document.getElementById('loginLoading');
+                this.loginError = document.getElementById('loginError');
+                
+                // Chat elements
+                this.chatApp = document.getElementById('chatApp');
+                this.chatMessages = document.getElementById('chatMessages');
+                this.messageInput = document.getElementById('messageInput');
+                this.sendButton = document.getElementById('sendButton');
+                this.connectionStatus = document.getElementById('connectionStatus');
+                this.currentUsername = document.getElementById('currentUsername');
+                this.currentRoom = document.getElementById('currentRoom');
+                this.roomName = document.getElementById('roomName');
+                this.usersList = document.getElementById('usersList');
+                this.userCount = document.getElementById('userCount');
+                this.messageCountEl = document.getElementById('messageCount');
+            }
+            
+            initEventListeners() {
+                // Login form
+                this.loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.handleLogin();
+                });
+                
+                // Message input
+                this.messageInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        this.sendMessage();
+                    } else {
+                        this.handleTyping();
+                    }
+                });
+                
+                // Send button
+                this.sendButton.addEventListener('click', () => {
+                    this.sendMessage();
+                });
+                
+                // Username input focus
+                this.usernameInput.focus();
+            }
+            
+            initSocket() {
+                try {
+                    this.socket = io({
+                        transports: ['websocket', 'polling'],
+                        upgrade: true,
+                        rememberUpgrade: true
+                    });
+                    
+                    this.socket.on('connect', () => {
+                        console.log('Connected to server');
+                        this.updateConnectionStatus('Đã kết nối', 'connected');
+                        this.isConnected = true;
+                    });
+                    
+                    this.socket.on('disconnect', () => {
+                        console.log('Disconnected from server');
+                        this.updateConnectionStatus('Mất kết nối', 'error');
+                        this.isConnected = false;
+                        this.messageInput.disabled = true;
+                        this.sendButton.disabled = true;
+                    });
+                    
+                    this.socket.on('connect_error', (error) => {
+                        console.error('Connection error:', error);
+                        this.updateConnectionStatus('Lỗi kết nối', 'error');
+                    });
+                    
+                    // Registration events
+                    this.socket.on('registration-success', (data) => {
+                        this.handleRegistrationSuccess(data);
+                    });
+                    
+                    this.socket.on('registration-error', (error) => {
+                        this.showLoginError(error);
+                        this.hideLoginLoading();
+                    });
+                    
+                    // Message events
+                    this.socket.on('receive-message', (data) => {
+                        this.displayMessage(data);
+                    });
+                    
+                    this.socket.on('message-error', (error) => {
+                        this.showSystemMessage('Lỗi: ' + error, 'error');
+                    });
+                    
+                    // User events
+                    this.socket.on('user-joined', (data) => {
+                        this.showSystemMessage(data.message);
+                    });
+                    
+                    this.socket.on('user-left', (data) => {
+                        this.showSystemMessage(data.message);
+                    });
+                    
+                    this.socket.on('users-update', (users) => {
+                        this.updateUsersList(users);
+                    });
+                    
+                    // Typing events
+                    this.socket.on('user-typing', (data) => {
+                        this.handleUserTyping(data);
+                    });
+                    
+                } catch (error) {
+                    console.error('Socket initialization error:', error);
+                    this.updateConnectionStatus('Lỗi khởi tạo', 'error');
+                }
+            }
+            
+            handleLogin() {
+                const username = this.usernameInput.value.trim();
+                const room = this.roomInput.value.trim() || 'general';
+                
+                if (!username || username.length < 2) {
+                    this.showLoginError('Tên người dùng phải có ít nhất 2 ký tự');
+                    return;
+                }
+                
+                if (room.length > 30) {
+                    this.showLoginError('Tên phòng không được quá 30 ký tự');
+                    return;
+                }
+                
+                this.showLoginLoading();
+                this.hideLoginError();
+                
+                if (!this.isConnected) {
+                    this.showLoginError('Chưa kết nối được đến server');
+                    this.hideLoginLoading();
+                    return;
+                }
+                
+                this.socket.emit('register-user', {
+                    username: username,
+                    room: room
+                });
+            }
+            
+            handleRegistrationSuccess(data) {
+                this.username = data.username;
+                this.room = data.room;
+                
+                // Update UI
+                this.currentUsername.textContent = this.username;
+                this.currentRoom.textContent = `Phòng: ${this.room}`;
+                this.roomName.textContent = this.room;
+                
+                // Hide login modal and show chat
+                this.loginModal.classList.add('hidden');
+                this.chatApp.classList.remove('hidden');
+                
+                // Enable message input
+                this.messageInput.disabled = false;
+                this.sendButton.disabled = false;
+                this.messageInput.focus();
+                
+                this.hideLoginLoading();
+                this.updateConnectionStatus('Đã tham gia phòng chat', 'connected');
+                
+                // Load previous messages
+                this.loadPreviousMessages();
+            }
+            
+            async loadPreviousMessages() {
+                try {
+                    const response = await fetch(`/api/messages/${this.room}?limit=50`);
+                    const data = await response.json();
+                    
+                    if (data.success && data.messages) {
+                        // Clear current messages except welcome message
+                        const welcomeMsg = this.chatMessages.querySelector('.system-message');
+                        this.chatMessages.innerHTML = '';
+                        if (welcomeMsg) {
+                            this.chatMessages.appendChild(welcomeMsg);
+                        }
+                        
+                        // Display previous messages
+                        data.messages.forEach(msg => {
+                            this.displayMessage(msg, false);
+                        });
+                        
+                        this.scrollToBottom();
+                    }
+                } catch (error) {
+                    console.error('Error loading previous messages:', error);
+                }
+            }
+            
+            sendMessage() {
+                const message = this.messageInput.value.trim();
+                
+                if (!message || !this.isConnected) {
+                    return;
+                }
+                
+                this.socket.emit('send-message', {
+                    message: message,
+                    room: this.room
+                });
+                
+                this.messageInput.value = '';
+                this.messageInput.focus();
+                
+                // Stop typing indicator
+                this.socket.emit('typing', { isTyping: false });
+            }
+            
+            displayMessage(data, scrollToBottom = true) {
+                const messageEl = document.createElement('div');
+                messageEl.className = `message ${data.username === this.username ? 'sent' : 'received'}`;
+                
+                const timestamp = new Date(data.timestamp).toLocaleTimeString('vi-VN', {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                
+                messageEl.innerHTML = `
+                    <div class="message-header">
+                        ${data.username === this.username ? 'Bạn' : data.username} • ${timestamp}
+                    </div>
+                    <div class="message-content">${this.escapeHtml(data.message)}</div>
+                `;
+                
+                this.chatMessages.appendChild(messageEl);
+                this.messageCount++;
+                this.messageCountEl.textContent = this.messageCount;
+                
+                if (scrollToBottom) {
+                    this.scrollToBottom();
+                }
+            }
+            
+            showSystemMessage(message, type = 'info') {
+                const messageEl = document.createElement('div');
+                messageEl.className = `system-message ${type}`;
+                messageEl.textContent = message;
+                
+                this.chatMessages.appendChild(messageEl);
+                this.scrollToBottom();
+            }
+            
+            updateUsersList(users) {
+                this.usersList.innerHTML = '';
+                this.userCount.textContent = users.length;
+                
+                users.forEach(user => {
+                    const userEl = document.createElement('div');
+                    userEl.className = 'user-item';
+                    
+                    const joinTime = new Date(user.joinedAt).toLocaleTimeString('vi-VN', {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    
+                    userEl.innerHTML = `
+                        <div class="user-status"></div>
+                        <div>
+                            <div>${this.escapeHtml(user.username)}</div>
+                            <div style="font-size: 0.8em; color: #6b7280;">Tham gia lúc ${joinTime}</div>
+                        </div>
+                    `;
+                    
+                    this.usersList.appendChild(userEl);
+                });
+            }
+            
+            handleTyping() {
+                if (!this.isConnected) return;
+                
+                this.socket.emit('typing', { isTyping: true });
+                
+                // Clear previous timeout
+                if (this.typingTimeout) {
+                    clearTimeout(this.typingTimeout);
+                }
+                
+                // Set new timeout to stop typing indicator
+                this.typingTimeout = setTimeout(() => {
+                    this.socket.emit('typing', { isTyping: false });
+                }, 2000);
+            }
+            
+            handleUserTyping(data) {
+                const typingId = `typing-${data.username}`;
+                let typingEl = document.getElementById(typingId);
+                
+                if (data.isTyping) {
+                    if (!typingEl) {
+                        typingEl = document.createElement('div');
+                        typingEl.id = typingId;
+                        typingEl.className = 'typing-indicator';
+                        typingEl.textContent = `${data.username} đang gõ...`;
+                        this.chatMessages.appendChild(typingEl);
+                        this.scrollToBottom();
+                    }
+                } else {
+                    if (typingEl) {
+                        typingEl.remove();
+                    }
+                }
+            }
+            
+            updateConnectionStatus(message, type = '') {
+                this.connectionStatus.textContent = message;
+                this.connectionStatus.className = `status ${type}`;
+            }
+            
+            showLoginError(message) {
+                this.loginError.textContent = message;
+                this.loginError.style.display = 'block';
+            }
+            
+            hideLoginError() {
+                this.loginError.style.display = 'none';
+            }
+            
+            showLoginLoading() {
+                this.loginLoading.style.display = 'block';
+                this.loginButton.disabled = true;
+                this.loginButton.textContent = 'Đang kết nối...';
+            }
+            
+            hideLoginLoading() {
+                this.loginLoading.style.display = 'none';
+                this.loginButton.disabled = false;
+                this.loginButton.textContent = 'Tham gia Chat';
+            }
+            
+            scrollToBottom() {
+                setTimeout(() => {
+                    this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
+                }, 100);
+            }
+            
+            escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+        }
+        
+        // Initialize app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new ChatApp();
+        });
+        
+        // Handle page reload warning
+        window.addEventListener('beforeunload', (e) => {
+            if (window.chatApp && window.chatApp.isConnected) {
+                e.preventDefault();
+                e.returnValue = 'Bạn có chắc muốn rời khỏi phòng chat?';
+            }
+        });
+    </script>
+</body>
+</html>
